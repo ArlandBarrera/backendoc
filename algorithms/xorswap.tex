@@ -1,0 +1,54 @@
+Given two values \textbf{a} and \textbf{b}, they can be swaped without the need of an temporary variable using the \textbf{xor}, exclusive or, operator. This works by changing the bits of the values. The caret symbol `\verb|^|' is the most common operator for the XOR operation in many programming languages like c, c++, Java and Javascript .The process is the following:
+
+\begin{lstlisting}[style=general,caption=XOR swap]
+  Algorithm swapValuesXOR(a, b){
+    a = a ^ b
+    b = a ^ b
+    a = a ^ b
+  }
+\end{lstlisting}
+
+XOR only returns true (\emph{1}) if the compared values are in an \emph{or} state, otherwise returns false (\emph{0}).
+
+There are three steps that involve the operation between \textbf{a} and \textbf{b} using \textbf{xor}. In the first step the result is stored in $a$, then in $b$ in the second and lastly in the third in $a$ again.
+
+This method is used in low level languages such as assembly.
+
+\textbf{Example:}
+
+a = 5 and b = 7, in binary a = 101 and b = 111.
+
+First step, the result is stored in $a$:
+
+\begin{align*}
+  a &= 101 \\
+  b &= 111
+\end{align*}
+
+\[\boxed{
+  a = 010
+}\]
+
+Second step, the result is stored in $b$:
+
+\begin{align*}
+  a &= 010 \\
+  b &= 111
+\end{align*}
+
+\[\boxed{
+  b = 101
+}\]
+
+Third step, the result is stored in $a$ again:
+
+\begin{align*}
+  a &= 010 \\
+  b &= 101
+\end{align*}
+
+\[\boxed{
+  a = 111
+}\]
+
+a = 111 and b = 101, in other terms a = 7 and b = 5. The values have been swaped.
