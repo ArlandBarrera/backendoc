@@ -1,0 +1,45 @@
+Given an array \textbf{arr[]} of \textbf{n} integers, and an integer element \textbf{x}, find whether element \textbf{x} is \textbf{present} in the array. Return the \textbf{index} of the first occurence of \textbf{x} in the array, or the invalid index \textbf{-1} it it doesn't exists.
+
+Linear search iterates over all the elements of the array one by one and checks if the current element is equal to the target element. It is also known as \textbf{sequential search}.
+
+\begin{lstlisting}[style=general]
+function linearSearch(arr, len, x) {
+  for (int i = 0; i < len; i++)
+    if (arr[i] == x)
+      return i;
+  return -1;
+}
+
+int arr = [2, 5, 65, 12, 84];
+int len = arr.length;
+int x = 65;
+int index  = linearSearch(arr, len, x);
+\end{lstlisting}
+
+\subsubsection{Time and Space Complexity}
+
+\textbf{Time Complexity}
+
+\begin{itemize}
+  \item \textbf{Best case:} the key might be at the first index. The best case is complexity \emph{O(1)}.
+  \item \textbf{Worst case:} the key might be at the last index. The worst case is complexity \emph{O(n)}, where \textit{n} is the size of the array.
+  \item \textbf{Average case:} \emph{O(n)}.
+\end{itemize}
+
+\textbf{Auxiliary Space:} \textit{O(1)} as except for the variable to iterate through the list, no other variable is used.
+
+\subsubsection{Advantages and Disadvantages}
+
+\textbf{Advantages}
+
+\begin{itemize}
+  \item Works on sorted or unsorted arrays. It can be used on arrays of any data type.
+  \item Does not require any additional memory.
+  \item Well-suited for small datasets.
+\end{itemize}
+
+\textbf{Dissdvantages}
+
+\begin{itemize}
+  \item Time complexity \textit{O(n)}, which is slow for large datasets.
+\end{itemize}

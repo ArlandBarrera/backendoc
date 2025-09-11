@@ -1,22 +1,24 @@
 \contentsline {chapter}{\numberline {1}Algorithms}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}XOR Swap}{4}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Sum of Arithmetic Series}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Sort}{6}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Bubble Sort}{6}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Selection Sort}{6}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Insertion Sort}{6}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Quick Sort}{6}{subsection.1.3.4}%
-\contentsline {subsection}{\numberline {1.3.5}Merge Sort}{6}{subsection.1.3.5}%
-\contentsline {subsection}{\numberline {1.3.6}Tim Sort}{6}{subsection.1.3.6}%
-\contentsline {section}{\numberline {1.4}Search}{6}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Linear Search}{6}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Binary Search}{6}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Hash Table Search}{6}{subsection.1.4.3}%
-\contentsline {chapter}{\numberline {2}Protocols}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}IP}{7}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Public IP Adress}{7}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Private IP Adress}{7}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}TCP}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}TLS}{7}{section.2.3}%
-\contentsline {section}{\numberline {2.4}UDP}{7}{section.2.4}%
-\contentsline {section}{\numberline {2.5}DNS}{7}{section.2.5}%
+\contentsline {section}{\numberline {1.3}Search}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Linear Search}{6}{subsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.1}Time and Space Complexity}{6}{subsubsection.1.3.1.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.2}Advantages and Disadvantages}{7}{subsubsection.1.3.1.2}%
+\contentsline {subsection}{\numberline {1.3.2}Binary Search}{7}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Hash Table Search}{7}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Sort}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Bubble Sort}{7}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Selection Sort}{7}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Insertion Sort}{7}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Quick Sort}{7}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Merge Sort}{7}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}Tim Sort}{7}{subsection.1.4.6}%
+\contentsline {chapter}{\numberline {2}Protocols}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}IP}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Public IP Adress}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Private IP Adress}{8}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}TCP}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}TLS}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}UDP}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}DNS}{8}{section.2.5}%

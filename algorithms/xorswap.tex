@@ -1,11 +1,12 @@
 Given two values \textbf{a} and \textbf{b}, they can be swaped without the need of an temporary variable using the \textbf{xor}, exclusive or, operator. This works by changing the bits of the values. The caret symbol `\verb|^|' is the most common operator for the XOR operation in many programming languages like c, c++, Java and Javascript .The process is the following:
 
 \begin{lstlisting}[style=general,caption=XOR swap]
-  Algorithm swapValuesXOR(a, b){
-    a = a ^ b
-    b = a ^ b
-    a = a ^ b
-  }
+function xorSwap(a, b) {
+  if (a == b) return;
+  a = a ^ b;
+  b = a ^ b;
+  a = a ^ b;
+}
 \end{lstlisting}
 
 XOR only returns true (\emph{1}) if the compared values are in an \emph{or} state, otherwise returns false (\emph{0}).

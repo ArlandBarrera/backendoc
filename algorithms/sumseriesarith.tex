@@ -32,12 +32,12 @@ By isolating $n$, the formula ends up like this:
 The algorithm has the following structure:
 
 \begin{lstlisting}[style=general]
-// if n is unknown
-n = ((af - ai) /d) + 1
-
-Algorithm sumArithmeticSeries(n, ai, af){
-  s = n * 0.5 * (ai + af)
+function sumArithmeticSeries(n, ai, af) {
+  return n * 0.5 * (ai + af);
 }
+
+// if n is unknown
+n = ((af - ai) /d) + 1;
 \end{lstlisting}
 
 This algorithm is $O(1)$, constant.
