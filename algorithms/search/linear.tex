@@ -1,19 +1,28 @@
-Given an array \textbf{arr[]} of \textbf{n} integers, and an integer element \textbf{x}, find whether element \textbf{x} is \textbf{present} in the array. Return the \textbf{index} of the first occurence of \textbf{x} in the array, or the invalid index \textbf{-1} it it doesn't exists.
-
 Linear search iterates over all the elements of the array one by one and checks if the current element is equal to the target element. It is also known as \textbf{sequential search}.
 
+\subsubsection{Steps}
+
+\begin{itemize}
+  \item The search space begins in the first element.
+  \item Compare the current element of the search space with a \textbf{key}.
+  \item The search space proceeds with the next element.
+  \item The process continues until the \textbf{key} is found or the total search space is exhausted.
+\end{itemize}
+
+\subsubsection{Implementation}
+
 \begin{lstlisting}[style=general]
-function linearSearch(arr, len, x) {
-  for (int i = 0; i < len; i++)
+function linearSearch(arr, n, x) {
+  for (int i = 0; i < n; i++)
     if (arr[i] == x)
       return i;
   return -1;
 }
 
 int arr = [2, 5, 65, 12, 84];
-int len = arr.length;
+int n = arr.length;
 int x = 65;
-int index  = linearSearch(arr, len, x);
+int index  = linearSearch(arr, n, x);
 \end{lstlisting}
 
 \subsubsection{Time and Space Complexity}

@@ -252,6 +252,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmro12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
+INPUT ./algorithms/search/definition.tex
+INPUT ./algorithms/search/definition.tex
+INPUT algorithms/search/definition.tex
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT ./algorithms/search/linear.tex
 INPUT ./algorithms/search/linear.tex

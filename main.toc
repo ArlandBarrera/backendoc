@@ -3,22 +3,28 @@
 \contentsline {section}{\numberline {1.2}Sum of Arithmetic Series}{5}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Search}{6}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Linear Search}{6}{subsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.1.1}Time and Space Complexity}{6}{subsubsection.1.3.1.1}%
-\contentsline {subsubsection}{\numberline {1.3.1.2}Advantages and Disadvantages}{7}{subsubsection.1.3.1.2}%
+\contentsline {subsubsection}{\numberline {1.3.1.1}Steps}{6}{subsubsection.1.3.1.1}%
+\contentsline {subsubsection}{\numberline {1.3.1.2}Implementation}{6}{subsubsection.1.3.1.2}%
+\contentsline {subsubsection}{\numberline {1.3.1.3}Time and Space Complexity}{7}{subsubsection.1.3.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1.4}Advantages and Disadvantages}{7}{subsubsection.1.3.1.4}%
 \contentsline {subsection}{\numberline {1.3.2}Binary Search}{7}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Hash Table Search}{7}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}Sort}{7}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Bubble Sort}{7}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Selection Sort}{7}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Insertion Sort}{7}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}Quick Sort}{7}{subsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.4.5}Merge Sort}{7}{subsection.1.4.5}%
-\contentsline {subsection}{\numberline {1.4.6}Tim Sort}{7}{subsection.1.4.6}%
-\contentsline {chapter}{\numberline {2}Protocols}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}IP}{8}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Public IP Adress}{8}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Private IP Adress}{8}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}TCP}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}TLS}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}UDP}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}DNS}{8}{section.2.5}%
+\contentsline {subsubsection}{\numberline {1.3.2.1}Steps}{7}{subsubsection.1.3.2.1}%
+\contentsline {subsubsection}{\numberline {1.3.2.2}Implementation}{8}{subsubsection.1.3.2.2}%
+\contentsline {subsubsection}{\numberline {1.3.2.3}Time and Space Complexity}{9}{subsubsection.1.3.2.3}%
+\contentsline {subsubsection}{\numberline {1.3.2.4}Advantages and Disadvantages}{9}{subsubsection.1.3.2.4}%
+\contentsline {subsection}{\numberline {1.3.3}Hash Table Search}{9}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Sort}{9}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Bubble Sort}{9}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Selection Sort}{9}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Insertion Sort}{9}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Quick Sort}{9}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Merge Sort}{9}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}Tim Sort}{9}{subsection.1.4.6}%
+\contentsline {chapter}{\numberline {2}Protocols}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}IP}{10}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Public IP Adress}{10}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Private IP Adress}{10}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}TCP}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}TLS}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}UDP}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}DNS}{10}{section.2.5}%

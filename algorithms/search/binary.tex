@@ -1,0 +1,108 @@
+Binary search operates on a sorted or monotonic search space, repeatedly dividing it into halves to find a target value or optimal answer.
+
+\subsubsection{Steps}
+
+\begin{itemize}
+  \item The search space is divided into two halves by \textbf{finding the middle index "mid"}.
+  \item Compare the middle element of the search space with a \textbf{key}.
+  \item if the \textbf{key} if found at middle element, the process is terminated.
+  \item if the \textbf{key}  is not found at the middle element, choose which half will be used as the next search space.
+  \begin{itemize}
+    \item if the \textbf{key} is \textbf{smaller} than the \textbf{middle element}, then the \textbf{left} side is used for the next search.
+    \item if the \textbf{key} is \textbf{larger} than the \textbf{middle element}, then the \textbf{right} side is used for the next search.
+  \end{itemize}
+  \item The process continues until the \textbf{key} is found or the total search space is exhausted.
+\end{itemize}
+
+\subsubsection{Implementation}
+
+This algorithm can be \textbf{iterative} or \textbf{recursive}.
+
+\textbf{Iterative}
+
+\begin{lstlisting}[style=general]
+function iterativeBinarySearch(arr, n, x) {
+  int low = 0; // first index of arr
+  int high = n - 1; // last index of arr
+  int mid; // middle element
+  while (low <= high) {
+    mid = low + (high - low) / 2;
+
+    // if x is present at mid
+    if (arr[mid] == x)
+      return mid;
+
+    // if x greater, ignore left half
+    if (arr[mid] < x)
+      low = mid + 1;
+
+    // else x smaller, ignore right half
+    else
+      high = mid - 1;
+  }
+  return -1;
+}
+
+int arr = [2, 5, 8, 21, 55, 78, 93];
+int n = arr.length;
+int x = 78;
+int index = iterativeBinarySearch(arr, n, x);
+\end{lstlisting}
+
+\textbf{Recursive}
+
+\begin{lstlisting}[style=general]
+function recursiveBinarySearch(arr, low, high, x) {
+  if (high >= low) {
+    mid = low + (high - low) / 2;
+
+    // if x is present at mid
+    if (arr[mid] == x)
+      return mid;
+
+    // if x smaller, ignore right half
+    if (arr[mid] > x)
+      return recursiveBinarySearch(arr, low, mid - 1, x);
+
+    // else x larger, ignore left half
+    return recursiveBinarySearch(arr, mid + 1, high, x);
+  }
+  return -1;
+}
+
+int arr = [2, 5, 8, 21, 55, 78, 93];
+int n = arr.length;
+int x = 78;
+int index = iterativeBinarySearch(arr, 0, n -1, x);
+\end{lstlisting}
+
+\subsubsection{Time and Space Complexity}
+
+\textbf{Time Complexity}
+
+\begin{itemize}
+  \item \textbf{Best case:} \textit{O(1)}.
+  \item \textbf{Worst case:} \textit{O(log n)}.
+  \item \textbf{Average case:} \emph{O(log n)}.
+\end{itemize}
+
+\textbf{Auxiliary Space:} \textit{O(1)}, if recursive call stack is considered then the auxiliary space will be \textit{O(lon n)}.
+
+Iterative is faster and more secure than recursive. Recursive may cause stack overflow if recursion depth is too large (for vey big arrays).
+
+\subsubsection{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Fast search for large datasets.
+  \item Efficient on sorted arrays..
+  \item Low memory use, only three extra variables (low, high, mid).
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Requires sorted data.
+  \item Less efficient on small arrays.
+\end{itemize}
