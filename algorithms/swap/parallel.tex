@@ -1,0 +1,40 @@
+Internally creates an array, then unpacks it. Due to clarity is preferred in high level languages like Python and JavaScript. Even though it looks simultaneous, it's really a two-step process of evaluate and assign.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Assign to \textbf{a} and \textbf{b} the opposite values.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+function parallelAssignmentSwap(a, b) {
+  // JavaScript, via array destructuring (unpacking)
+  [a, b] = [b, a]
+
+  // Python, tuple under the hood
+  // Ruby, Go
+  a, b = b, a
+}
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity:} \textit{O(1)}, array/object creation + assignment.
+
+\textbf{Space Complexity:} \textit{O(1)}, temporary array of size 2.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Concise and safe.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Slight overhead from creating temporary object (often negligible).
+\end{itemize}

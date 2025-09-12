@@ -1,0 +1,40 @@
+Uses a temporary variable to swap two values. Compilers optimize this method very well. Fastest and safest in prectice.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Assign a value \textbf{a} to a temporary variable.
+  \item Assign a value \textbf{b} to \textbf{a}.
+  \item Assign the value of the temporary variable to \textbf{b}.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+function temporaryVariableSwap(a, b) {
+  int tmp = a;
+  a = b;
+  b = tmp;
+}
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity:} \textit{O(1)}, 3 assignments.
+
+\textbf{Space Complexity:} \textit{O(1)}, 1 extra variable.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Works for all data types.
+  \item Compilers optimize it very well.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Needs one extra variable (negligible cost).
+\end{itemize}

@@ -1,0 +1,50 @@
+Selection Sort works by repeatedly selecting the smallest (or largest) element from unsorted portion and swapping it with the first unsorted element.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Find the smallest element and swap it with the first element.
+  \item Find the smallest among the remaining elements (or second smallest) and swap it with the second element.
+  \item This is done until all the elements are moved to their correct positions.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+function selectionSort(arr, n) {
+  for (int i = 0; i < n - 1; i++) {
+    // current position
+    int min_idx = i;
+    // iterate through unsorted portion
+    for (int j = i + 1; j < n; j++) {
+      // update min_idx if smaller element is found
+      if (arr[j] < arr[min_idx]) {
+        min_idx = j;
+      }
+    }
+    // move minimum element to correct position
+    swap(arr[i], arr[min_idx]);
+  }
+}
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity:} \textit{O($n^2$)}, as there are two nested loops.
+
+\textbf{Space Complexity:} \textit{O(1)}.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Easy to implement.
+  \item Requires less number of swaps (or memory writes) compared to many other standard algorithms.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item The time complexity of \textit{O($n^2$)} makes it slower compared to others like \textbf{Quick Sort} or \textbf{Merge Sort}.
+\end{itemize}

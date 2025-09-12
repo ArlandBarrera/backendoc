@@ -1,6 +1,6 @@
 Linear search iterates over all the elements of the array one by one and checks if the current element is equal to the target element. It is also known as \textbf{sequential search}.
 
-\subsubsection{Steps}
+\subsubsection*{Steps}
 
 \begin{itemize}
   \item The search space begins in the first element.
@@ -9,7 +9,7 @@ Linear search iterates over all the elements of the array one by one and checks 
   \item The process continues until the \textbf{key} is found or the total search space is exhausted.
 \end{itemize}
 
-\subsubsection{Implementation}
+\subsubsection*{Implementation}
 
 \begin{lstlisting}[style=general]
 function linearSearch(arr, n, x) {
@@ -25,19 +25,19 @@ int x = 65;
 int index  = linearSearch(arr, n, x);
 \end{lstlisting}
 
-\subsubsection{Time and Space Complexity}
+\subsubsection*{Time and Space Complexity}
 
 \textbf{Time Complexity}
 
 \begin{itemize}
   \item \textbf{Best case:} the key might be at the first index. The best case is complexity \emph{O(1)}.
-  \item \textbf{Worst case:} the key might be at the last index. The worst case is complexity \emph{O(n)}, where \textit{n} is the size of the array.
   \item \textbf{Average case:} \emph{O(n)}.
+  \item \textbf{Worst case:} the key might be at the last index. The worst case is complexity \emph{O(n)}, where \textit{n} is the size of the array.
 \end{itemize}
 
-\textbf{Auxiliary Space:} \textit{O(1)} as except for the variable to iterate through the list, no other variable is used.
+\textbf{Space Complexity:} \textit{O(1)} as except for the variable to iterate through the list, no other variable is used.
 
-\subsubsection{Advantages and Disadvantages}
+\subsubsection*{Advantages and Disadvantages}
 
 \textbf{Advantages}
 

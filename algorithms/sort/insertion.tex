@@ -1,0 +1,56 @@
+Works by iteratively inserting each element of an unsorted list into it's correct position in a sorted portion of the list. It is like sorting playing cards in your hands.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item It starts with the second element of the array as the first element is assumed to be sorted.
+  \item Compare the second element with the first element if the second element is smaller then swap them.
+  \item Move to the third element, compare it with the first two elements, and put it in it's correct position.
+  \item Repeat until the entire array is sorted.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+function insertionSort(arr, n) {
+  for (int i = 1; i < n; ++i) {
+    int key = arr[i];
+    int j = i - 1;
+    /* move elements greater than key to one position
+       ahead of their current position */
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j];
+      j = j - 1;
+    }
+    arr[j + 1] = key;
+  }
+}
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity}
+
+\begin{itemize}
+  \item \textbf{Best case:} \textit{O(n)}.
+  \item \textbf{Average case:} \emph{O($n^2$)}.
+  \item \textbf{Worst case:} \textit{O($n^2$)}.
+\end{itemize}
+
+\textbf{Space Complexity:} \textit{O(1)}, it is a space-efficient sorting algorithm.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Efficient for small and nearly sorted lists.
+  \item Space-efficient algorithm.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Inefficient for large lists.
+  \item For most cases not as efficient as others like \textbf{Merge Sort} or \textbf{Quick Sort}.
+\end{itemize}

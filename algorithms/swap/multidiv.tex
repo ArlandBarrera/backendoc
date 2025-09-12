@@ -1,0 +1,42 @@
+Series of multiplications and divisions.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Assign to \textbf{a} the product of \textbf{a} and \textbf{b}.
+  \item Assign to \textbf{b} the division of \textbf{a} and \textbf{b}.
+  \item Assign to \textbf{a} the division of \textbf{a} and \textbf{b}.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+function multiplicationDivisionSwap(a, b) {
+  a = a * b;
+  b = a / b;
+  a = a / b;
+}
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity:} \textit{O(1)}, 2 multiplications and 2 divisions
+
+\textbf{Space Complexity:} \textit{O(1)}, no extra variable.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item No need for an extra variable.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Risk of overflow.
+  \item Only works with non-zero integers.
+  \item Division is slower than addition or XOR.
+  \item Practically never used.
+\end{itemize}

@@ -1,6 +1,6 @@
 Binary search operates on a sorted or monotonic search space, repeatedly dividing it into halves to find a target value or optimal answer.
 
-\subsubsection{Steps}
+\subsubsection*{Steps}
 
 \begin{itemize}
   \item The search space is divided into two halves by \textbf{finding the middle index "mid"}.
@@ -14,7 +14,7 @@ Binary search operates on a sorted or monotonic search space, repeatedly dividin
   \item The process continues until the \textbf{key} is found or the total search space is exhausted.
 \end{itemize}
 
-\subsubsection{Implementation}
+\subsubsection*{Implementation}
 
 This algorithm can be \textbf{iterative} or \textbf{recursive}.
 
@@ -76,21 +76,21 @@ int x = 78;
 int index = iterativeBinarySearch(arr, 0, n -1, x);
 \end{lstlisting}
 
-\subsubsection{Time and Space Complexity}
+\subsubsection*{Time and Space Complexity}
 
 \textbf{Time Complexity}
 
 \begin{itemize}
   \item \textbf{Best case:} \textit{O(1)}.
-  \item \textbf{Worst case:} \textit{O(log n)}.
   \item \textbf{Average case:} \emph{O(log n)}.
+  \item \textbf{Worst case:} \textit{O(log n)}.
 \end{itemize}
 
-\textbf{Auxiliary Space:} \textit{O(1)}, if recursive call stack is considered then the auxiliary space will be \textit{O(lon n)}.
+\textbf{Space Complexity:} \textit{O(1)}, if recursive call stack is considered then the auxiliary space will be \textit{O(lon n)}.
 
 Iterative is faster and more secure than recursive. Recursive may cause stack overflow if recursion depth is too large (for vey big arrays).
 
-\subsubsection{Advantages and Disadvantages}
+\subsubsection*{Advantages and Disadvantages}
 
 \textbf{Advantages:}
 

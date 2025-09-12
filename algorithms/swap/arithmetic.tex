@@ -1,0 +1,45 @@
+Series of additions and substractions.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Assign to \textbf{a} the sum of \textbf{a} and \textbf{b}.
+  \item Assign to \textbf{b} the substraction of \textbf{a} and \textbf{b}.
+  \item Assign to \textbf{a} the substraction of \textbf{a} and \textbf{b}.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+function arithmeticSwap(a, b) {
+  a = a + b;
+  b = a - b;
+  a = a - b;
+
+  // this also works
+  a = a - b;
+  b = a + b;
+  a = b - a;
+}
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity:} \textit{O(1)}, 3 arithmetic operations.
+
+\textbf{Space Complexity:} \textit{O(1)}, no extra variable.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item No need for an extra variable.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Risk of overflow.
+  \item Only works on numeric types.
+\end{itemize}

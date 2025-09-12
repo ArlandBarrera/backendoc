@@ -1,0 +1,82 @@
+Given two values \textbf{a} and \textbf{b}, they can be swaped without the need of an temporary variable using the \textbf{xor}, exclusive or, operator. This works by changing the bits of the values. The caret symbol `\verb|^|' is the most common operator for the XOR operation in many programming languages like c, c++, Java and Javascript .
+
+XOR only returns true (\emph{1}) if the compared values are in an \emph{or} state, otherwise returns false (\emph{0}). This method is used in low level languages such as assembly.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Assign to \textbf{a} the xor operation of \textbf{a} and \textbf{b}.
+  \item Assign to \textbf{b} the xor operation of \textbf{a} and \textbf{b}.
+  \item Assign to \textbf{a} the xor operation of \textbf{a} and \textbf{b}.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general,caption=XOR swap]
+function xorSwap(a, b) {
+  a = a ^ b;
+  b = a ^ b;
+  a = a ^ b;
+}
+\end{lstlisting}
+
+\textbf{Example}
+
+a = 5 and b = 7, in binary a = 101 and b = 111.
+
+First step, the result is stored in $a$:
+
+\begin{align*}
+  a &= 101 \\
+  b &= 111
+\end{align*}
+
+\[\boxed{
+  a = 010
+}\]
+
+Second step, the result is stored in $b$:
+
+\begin{align*}
+  a &= 010 \\
+  b &= 111
+\end{align*}
+
+\[\boxed{
+  b = 101
+}\]
+
+Third step, the result is stored in $a$ again:
+
+\begin{align*}
+  a &= 010 \\
+  b &= 101
+\end{align*}
+
+\[\boxed{
+  a = 111
+}\]
+
+a = 111 and b = 101, in other terms a = 7 and b = 5. The values have been swaped.
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity:} \textit{O(1)}, 3 bitwise XOR operations.
+
+\textbf{Space Complexity:} \textit{O(1)}, no extra variable.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item No extra memory.
+  \item Works well for integers.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Only works on integers types
+  \item Fails if \textbf{a} and \textbf{b} point to the same memory location.
+\end{itemize}

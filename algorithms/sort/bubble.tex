@@ -1,0 +1,56 @@
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as it's average and wort-case time complexity are quite high.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Checks if the current element is larger than the adjacent element and swaps them. This happens for every element.
+  \item This is done in multiple passes.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+function bubbleSort(arr, n) {
+  bool swapped;
+  for (i = 0; i < n - 1; i++) {
+    swapped = false;
+    for (j = 0; j < n - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        // swap values
+        swap(arr[j], arr[j + 1]);
+        swapped = true;
+      }
+    }
+    // if no elements were swapped break
+    if (swapped == false)
+      break;
+  }
+}
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity:}
+
+\begin{itemize}
+  \item \textbf{Best case:} \textit{O(n)}.
+  \item \textbf{Average case:} \emph{O($n^2$)}.
+  \item \textbf{Worst case:} \textit{O($n^2$)}.
+\end{itemize}
+
+\textbf{Space Complexity:} \textit{O(1)}.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Easy to implement.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item It is slow for large data sets.
+  \item it has almost no or limited real world applications.
+\end{itemize}
