@@ -1,10 +1,8 @@
-The sum of an arithmetic series is is given by the expression:
+The sum of an arithmetic series is given by the expression:
 
 \[\boxed{
   S_n = \dfrac{n}{2}\left(a_i+a_f\right)
 }\]
-
-Computers process multiplications faster, so the division $n/2$ can be replaced by the product $n*0.5$.
 
 \textbf{Elements:}
 
@@ -29,7 +27,7 @@ By isolating $n$, the formula ends up like this:
   n = \left(\dfrac{a_f-a_i}{d}\right)+1
 }\]
 
-The algorithm has the following structure:
+\textbf{Implementation}
 
 \begin{lstlisting}[style=general]
 function sumArithmeticSeries(n, ai, af) {

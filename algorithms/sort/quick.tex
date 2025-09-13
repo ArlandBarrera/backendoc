@@ -1,0 +1,106 @@
+Quick Sort picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in it's correct position in the sorted array.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Select an element as the pivot. The choice of pivot can vary (first, last, random, median).
+  \item Re arrange the array around the pivot. After partitioning, all elements smaller than the pivot will be on it's left, and all elements grater than the pivot will be on it's right. The pivot is then i nit's correct position, and the index of the pivot is obtained.
+  \item Recursively apply the same process to the two partitioned sub-arrays (left and right of the pivot).
+  \item The recursion stops when there is only one element left in the subarray, as a single element is already sorted.
+\end{itemize}
+
+\textbf{Choice of pivot}
+
+\begin{itemize}
+  \item \textbf{First or last}: the problem with this approach is it ends up in the worst case when array is already sorted.
+  \item \textbf{Random}: This is a preferred approach beacuse it does not have a pattern for wich the worst case happens.
+  \item \textbf{Median}: In terms of time complexity is the ideal approach as median can be found in linear time and the partition function will always divide the input array into two halves. It takes more time on average as median finding has high constants.
+\end{itemize}
+
+\textbf{Partiton Algorithm}
+
+\begin{itemize}
+  \item \textbf{Naive Partition}: Create copy of the array. First put all smaller elements and then all greater. Finally the temporary array is copied back to the original array. This requires \textit{O(n)} extra space.
+  \item \textbf{Lomuto Partition}: Keep track of the index of smaller elements and keep swapping. It is simple.
+  \item \textbf{Hoare Partition}: The fastest of all. The array is traversed from both sided and keep swapping grater element on the left with smaller on right while the array is not partitioned.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+// partition function (Lomuto)
+function patition(arr, low, high) {
+  // pivot, always pick last
+  int pivot = arr[high];
+
+  // idx of smaller element
+  int i = low -1;
+
+  // traverse arr[low...high] move all smaller elements to left side
+  for (int j = low; j <= high - 1; j++) {
+    if (arr[j] < pivot) {
+      i++;
+      // swap function
+      swap(arr, i, j);
+    }
+  }
+
+  // move pivot after smaller elements and returns it's position
+  swap(arr, i + 1, high);
+  return i + 1;
+}
+
+// quicksort function
+function quickSort(arr, low, high) {
+  if (low < high) {
+    // pi -> partition return index of pivot
+    int pi = partition(arr, low, high);
+
+    // recursion calls for smaller elements and grater or equal elements
+    quickSort(arr, low, pi - 1);
+    quickSort(arr, pi + 1, high);
+  }
+}
+
+// main
+int arr = [10, 7, 8, 9, 1, 5];
+int n = arr.length;
+// call quickSort
+quickSort(arr, 0, n -1);
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity}
+
+\begin{itemize}
+  \item \textbf{Best case:} \textit{O(n log n)}, pivot element divides the array into two equal halves.
+  \item \textbf{Average case:} \emph{O(n log n)}, pivot divides the array into two parts, but not necessarily equal.
+  \item \textbf{Worst case:} \textit{O($n^2$)}, smaller or largest element is always chosen as the pivot (e.g. sorted arrays).
+\end{itemize}
+
+\textbf{Space Complexity}
+
+\begin{itemize}
+  \item \textbf{Best case:} \textit{O(n}, due to inbalanced partitioning leading to a skewed recursion tree requiring a call stack of size \textit{O(n)}.
+  \item \textbf{Worst case:} \textit{O(n}, as a result of balanced partitioning leading to a balanced recursion tree requiring a call stack of size \textit{O(log n)}.
+\end{itemize}
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Efficient on large data sets.
+  \item Requires a small amount of memory to function.
+  \item Cache friendly a it works on the same array.
+  \item Fastest general purpose algorithm for large data sets when stability is required.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Worst case time complexity of \textit{O($n^2$)}, occurs when pivot is chosen poorly.
+  \item Inefficient for small data sets.
+  \item Not stable, if two elements have the same key their relative order will not be preserved.
+\end{itemize}

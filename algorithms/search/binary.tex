@@ -26,7 +26,7 @@ function iterativeBinarySearch(arr, n, x) {
   int high = n - 1; // last index of arr
   int mid; // middle element
   while (low <= high) {
-    mid = low + (high - low) / 2;
+    mid = floor(low + (high - low) / 2);
 
     // if x is present at mid
     if (arr[mid] == x)
@@ -54,7 +54,7 @@ int index = iterativeBinarySearch(arr, n, x);
 \begin{lstlisting}[style=general]
 function recursiveBinarySearch(arr, low, high, x) {
   if (high >= low) {
-    mid = low + (high - low) / 2;
+    mid = floor(low + (high - low) / 2);
 
     // if x is present at mid
     if (arr[mid] == x)

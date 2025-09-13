@@ -1,0 +1,99 @@
+Merge Sort works by recursively dividing the input array into two halves, recursively  sorting the two halves and finally merging them back together to obtain the sorted array.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Divide the array recursively into two halves until it can no more be divided.
+  \item Each subarray is sorted individually using the merge sort algorithm.
+  \item The sorted subarrays are merged back together in sorted order. The process continues until all elements from both subarrays have been merged.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+function merge(arr, left, mid, right) {
+  const int n1 = mid - left + 1;
+  const int n2 = right - mid;
+
+  // tmp arrays
+  const int L[n1], R[n2];
+
+  // copy data to tmp arrays L[] and R[]
+  for (int i = 0; i < n1; i++)
+    L[i] = arr[left + 1];
+  for (int j = 0; j < n2; j++)
+    R[i] = arr[mid + 1 + j];
+
+  int i = 0, j = 0;
+  int k = left;
+
+  // merge tmp arrays back into arr[left...right]
+  while (i < n1 && j < n2) {
+    if (L[i] <= R[j]) {
+      arr[k] = L[i];
+      i++;
+    } else {
+      arr[k] = R[j];
+      j++;
+    }
+    k++;
+  }
+
+  // copy remaining elements of L[], if there are any
+  while (i < n1) {
+    arr[k] = L[i];
+    i++;
+    k++;
+  }
+
+  // copy remaining elements of R[], if there are any
+  while (j < n2) {
+    arr[k] = R[j];
+    j++;
+    k++;
+  }
+}
+
+function mergeSort(arr, left, right) {
+  if (left >= right)
+    return;
+
+  const int mid = floor(left + (right - left) / 2);
+  mergeSort(arr, left, mid);
+  mergeSort(arr, mid + 1, right);
+  merge(arr, left, mid, right);
+}
+
+// main code
+const int arr = [38, 27, 43, 10];
+mergeSort(arr, 0, arr.length - 1);
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity}
+
+\begin{itemize}
+  \item \textbf{Best case:} \textit{O(n log n)}, already sorted or nearly sorted.
+  \item \textbf{Average case:} \emph{O(n log n)}, randomly ordered.
+  \item \textbf{Worst case:} \textit{O(n log n)}, sorted in reverse order.
+\end{itemize}
+
+\textbf{Space Complexity:} \textit{O(n)}, temporary array used during merging.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Guaranteed worst-case performance of \textit{O(n log n)}.
+  \item The divide-and-conquer is simple to implement.
+  \item Independently merge subarrays wich makes it suitable for parallel processing.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Additional space complexity to store merged subarrays.
+  \item Slower than QuickSort in general.
+\end{itemize}
