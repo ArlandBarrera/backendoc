@@ -1,0 +1,83 @@
+Heap sort is based on \textbf{Binary Heap Data Structure}. It can be seen as an optimization over \textbf{selection sort} where the max (or min) element is first found and swapped with the last (or first). In Heap Sort, the use of Binary Heap can quickly find and move the max element in \textit{O(log n)} instead of \textit{O(n)} and hence achieve the \textit{O(n log n)} time complexity. Heapsort algorithm has limited uses because Quicksort is better in practice. Nevertheless, the \textbf{Heap Data Structure} itself is enormously used.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Convert the array into a \textbf{max heap} using \textbf{heapify}. This happens in-place.
+  \item One by one delete root node of the Max-heap and replace it with the last node and \textbf{heapify}. Repeat this process while size of heap is greater than 1.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+// heapify a subtree rooted with node i
+function heapify(arr, n, i) {
+  // initialize largest as root
+  int largest = i;
+
+  // left index = 2*i + 1
+  int left = 2 * i + 1;
+
+  // right index = 2*i + 2
+  int right = 2 * i + 2;
+
+  // if left child greater than root
+  if (left < n && arr[left] > arr[largest])
+    largest = l;
+
+  // if right child greater than largest so far
+  if (right < n && arr[right] > arr[largest])
+    largest = right;
+
+  // if largest is not root
+  if (largest != i) {
+    // swap function
+    swap(arr[i], arr[largest]);
+    // recursively heapify the affected sub-tree
+    heapify(arr, n, largest);
+  }
+}
+
+// function for heap sort
+function heapSort(arr, n) {
+  // build heap (rearrange array)
+  for (int i = floor(n / 2) - 1; i >= 0; i--)
+    heapify(arr, n, i);
+
+  // one by one extract element from heap
+  for (int i = n - 1; i > 0; i--) {
+    // swap function
+    swap(arr[0], arr[i]);
+    // call max heapify on the reduced heap
+    heapify(arr, i, 0);
+  }
+}
+
+// main
+int arr = [9, 4, 3, 8, 10, 2, 5];
+int n = arr.length;
+heapSort(arr, n);
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity:} \textit{O(n log n)}, in all cases.
+
+\textbf{Space Complexity:} \textit{O(log n)}, due to recursive call stack.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Efficient for large datasets due to time complexity.
+  \item Simple to use.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item Costly, as the constants are higher compared to other (e.g. merge sort).
+  \item Unstable, it might rearrange the relative order of elements.
+  \item Inefficient because of high constants in the time complexity.
+\end{itemize}
