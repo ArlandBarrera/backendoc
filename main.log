@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.31)  13 SEP 2025 20:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.31)  14 SEP 2025 11:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -205,6 +205,21 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen165
 \Gin@req@width=\dimen166
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen167
+\ar@mcellbox=\box57
+\extrarowheight=\dimen168
+\NC@list=\toks28
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box58
+)
+\rotheadsize=\dimen169
+\c@nlinenum=\count299
+\TeXr@lab=\toks29
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -231,13 +246,13 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count299
+\c@section@level=\count300
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen167
-\Hy@linkcounter=\count300
-\Hy@pagecounter=\count301
+\@linkdim=\dimen170
+\Hy@linkcounter=\count301
+\Hy@pagecounter=\count302
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2025-05-20 v7.01m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -245,7 +260,7 @@ Now handling font encoding PD1 ...
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count302
+\Hy@SavedSpaceFactor=\count303
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2025-05-20 v7.01m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -259,17 +274,17 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count303
+\c@Hy@tempcnt=\count304
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen168
+\XeTeXLinkMargin=\dimen171
  (/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count304
-\Field@Width=\dimen169
-\Fld@charsize=\dimen170
+\Fld@menulength=\count305
+\Field@Width=\dimen172
+\Fld@charsize=\dimen173
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -277,21 +292,21 @@ Package hyperref Info: backreferencing OFF on input line 6057.
 Package hyperref Info: Link coloring ON on input line 6060.
 Package hyperref Info: Link coloring with OCG OFF on input line 6067.
 Package hyperref Info: PDF/A mode OFF on input line 6072.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count305
-\c@Item=\count306
-\c@Hfootnote=\count307
+\Hy@abspage=\count306
+\c@Item=\count307
+\c@Hfootnote=\count308
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2025-05-20 v7.01m Hyperref driver for pdfTeX
-\Fld@listcount=\count308
-\c@bookmark@seq@number=\count309
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+\Fld@listcount=\count309
+\c@bookmark@seq@number=\count310
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
@@ -301,44 +316,44 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip54
+\Hy@SectionHShift=\skip56
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 2024-04-10 v6.00 eXternal References (DPC)
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks28
-\inpenc@posthook=\toks29
+\inpenc@prehook=\toks30
+\inpenc@posthook=\toks31
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box57
-\beforetitleunit=\skip55
-\aftertitleunit=\skip56
-\ttl@plus=\dimen171
-\ttl@minus=\dimen172
-\ttl@toksa=\toks30
-\titlewidth=\dimen173
-\titlewidthlast=\dimen174
-\titlewidthfirst=\dimen175
+\ttl@box=\box59
+\beforetitleunit=\skip57
+\aftertitleunit=\skip58
+\ttl@plus=\dimen174
+\ttl@minus=\dimen175
+\ttl@toksa=\toks32
+\titlewidth=\dimen176
+\titlewidthlast=\dimen177
+\titlewidthfirst=\dimen178
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count310
-\lst@gtempboxa=\box58
-\lst@token=\toks31
-\lst@length=\count311
-\lst@currlwidth=\dimen176
-\lst@column=\count312
-\lst@pos=\count313
-\lst@lostspace=\dimen177
-\lst@width=\dimen178
-\lst@newlines=\count314
-\lst@lineno=\count315
-\lst@maxwidth=\dimen179
+\lst@mode=\count311
+\lst@gtempboxa=\box60
+\lst@token=\toks33
+\lst@length=\count312
+\lst@currlwidth=\dimen179
+\lst@column=\count313
+\lst@pos=\count314
+\lst@lostspace=\dimen180
+\lst@width=\dimen181
+\lst@newlines=\count315
+\lst@lineno=\count316
+\lst@maxwidth=\dimen182
  (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count316
-\lst@skipnumbers=\count317
-\lst@framebox=\box59
+\c@lstnumber=\count317
+\lst@skipnumbers=\count318
+\lst@framebox=\box61
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
@@ -368,7 +383,7 @@ LABELS NOT IMPORTED.
 
 )) (./estilos.tex) (./listings.tex) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count318
+\l__color_backend_stack_int=\count319
 ) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -427,17 +442,17 @@ LaTeX Font Info:    ... okay on input line 35.
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count319
-\scratchdimen=\dimen180
-\scratchbox=\box60
-\nofMPsegments=\count320
-\nofMParguments=\count321
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count322
-\MPscratchDim=\dimen181
-\MPnumerator=\count323
-\makeMPintoPDFobject=\count324
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count320
+\scratchdimen=\dimen183
+\scratchbox=\box62
+\nofMPsegments=\count321
+\nofMParguments=\count322
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count323
+\MPscratchDim=\dimen184
+\MPnumerator=\count324
+\makeMPintoPDFobject=\count325
+\everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -449,7 +464,7 @@ Package hyperref Info: Link coloring ON on input line 35.
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-\c@lstlisting=\count325
+\c@lstlisting=\count326
 LaTeX Font Info:    Calculating math sizes for size <13.2> on input line 38.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -557,15 +572,24 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
 
 [25]
 Chapter 2.
-(./protocols/definition.tex) (./protocols/ip.tex) (./protocols/tcp.tex) (./protocols/tls.tex) (./protocols/udp.tex) (./protocols/dns.tex)) (./api/ref-api.tex
+(./protocols/definition.tex) (./protocols/ip/definition.tex) (./protocols/ip/ipv4.tex
 
 [26
 
 ]
+Underfull \vbox (badness 4441) has occurred while \output is active []
+
+
+
+[27]) (./protocols/ip/ipv6.tex) (./protocols/ip/public.tex) (./protocols/ip/private.tex) (./protocols/ip/static.tex) (./protocols/ip/dynamic.tex) (./protocols/tcp.tex
+
+[28]) (./protocols/tls.tex) (./protocols/udp.tex) (./protocols/dns.tex)) (./api/ref-api.tex
+
+[29]
 Chapter 3.
 (./api/definition.tex))
 
-[27
+[30
 
 ] (./main.aux)
  ***********
@@ -573,21 +597,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C40DF1E965DAB256B83222A4A11BE735;3373.
+(rerunfilecheck)             Checksum: 38BD6DB687A6D40179B36F576C33D422;3614.
  ) 
 Here is how much of TeX's memory you used:
- 13884 strings out of 469590
- 215875 string characters out of 5470346
- 915967 words of memory out of 5000000
- 39952 multiletter control sequences out of 15000+600000
+ 14174 strings out of 469590
+ 220062 string characters out of 5470346
+ 920067 words of memory out of 5000000
+ 40204 multiletter control sequences out of 15000+600000
  687267 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,10n,82p,1193b,2037s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,15n,82p,1193b,2037s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (27 pages, 313027 bytes).
+Output written on main.pdf (30 pages, 324141 bytes).
 PDF statistics:
- 882 PDF objects out of 1000 (max. 8388607)
- 816 compressed objects within 9 object streams
- 479 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 922 PDF objects out of 1000 (max. 8388607)
+ 853 compressed objects within 9 object streams
+ 492 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 

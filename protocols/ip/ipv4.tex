@@ -1,0 +1,68 @@
+The Internet Protocol version 4 (IPv4) address is the older version. It is one of the core protocols of the standards-based methods used to interconnect the internet and other networks. It was deployed on the \textit{Atlantic Packet Satellite Network} (SATNET), which was a satellite network, in 1982. It is still used to route most internet traffic despite the existence of IPv6.
+
+IPv4 is currently assigned to all computers. An IPv4 address uses \textbf{32-bit} binary numbers to form a unique IP address. It takes the format of four sets of numbers, each within ranges from \textbf{0} to \textbf{255} and represents and eight-digit binary number, separated by a period point.
+
+The \textbf{full range} of IP addresses can go from \textbf{0.0.0.0} to \textbf{255.255.255.255}. The \textbf{total combination} of IP addresses is $2^{32}$ = \textbf{4 294 967 296} (four billion, two hundred ninety-four million, nine hundred sixty-seven thousand, two hundred ninety-six)
+
+Some IP addresses are reserved for networks that carry a specific purpose on the TCP/IP. Four of these IP addresses classes innclude:
+
+\begin{itemize}
+  \item \textbf{0.0.0.0:} In IPv4 is also known as the \textbf{default network}. It is the non-routable meta address that designates an invalid, non-applicable, or unknown network target.
+  \item \textbf{127.0.0.1:} Is known as the \textbf{loopback address}, also known as \textbf{localhost}, which a computer uses to identify itself regardless of whether it has been assigned and IP address.
+  \item \textbf{169.254.0.1} to \textbf{169.254.254.254:} A range of addresses that are automatically assigned if a computer is unsuccessful in an attempt to receive an address from the DHCP.
+  \item \textbf{255.255.255.255:} An address dedicated to messages that need to be sent to every computer on a network or \textbf{broadcasted across a network}.
+\end{itemize}
+
+Further reserved IP addresses are for what is known as \textbf{subnet classes}. A \textbf{subnet} IP is a logically smaller division within a lerger IP network, crated through a process called subnetting. Subnetting divides a large network into smaller, more managable segments, or subnets, wich allows for more efficient data routing, improved network performance and better security.
+
+Each subnet is assigned a unique range of IP addresses, and a \textbf{subnet mask} is used to identify which part of an IP address belongs to the network and which part belongs to the host device within that subnet.
+
+\textbf{Subnetting}
+
+\begin{enumerate}
+  \item \textbf{IP Address Structure:} An IP address is logically divided into two parts: a network number (or routing prefix) and a host identifier.
+  \item \textbf{Subnet Mask:} A subnet mask is used to determine these two parts of an IP address. It's a number with a specific bit pattern, where the bits set to `\textbf{1}' indicate indicate the \textbf{network portion}, and the bits set to `\textbf{0}' indicate the \textbf{host portion}.
+  \item \textbf{Logical Divison:} By changing some of the bits from the host portion to the network portion, an administrator can effectively create smaller subnets from a single, larger network.
+\end{enumerate}
+
+For example \textbf{255.255.0.0} in binary is \textbf{11111111.11111111.00000000.00000000}, `\textbf{1}' refers to the network part and `\textbf{0}' to the host part.
+
+The router on a TCP/IP network can be configured to ensure it recognizes subnets, then route the traffic onto the appropriate network. IP addresses are reserved for the following subnets:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{\makecell{Address \\ Class}} & \textbf{Range} & \textbf{\makecell{Default \\ Subnet Mask}} & \textbf{\makecell{Number of \\ Networks}}  & \textbf{\makecell{Hosts per \\ Network}} \\
+    \hline
+    A & \makecell{1.0.0.0 \\ 126.255.255.255} & 255.0.0.0 & $2^7$ = 128 & $2^{24} - 2$ = 16 777 214 \\
+    \hline
+    B & \makecell{128.0.0.0 \\ 191.255.255.255} & 255.255.0.0 & $2^{14}$ = 16 384 & $2^{16} - 2$ = 65 534 \\
+    \hline
+    C & \makecell{192.0.0.0 \\ 223.255.255.255} & 255.255.255.0 & $2^{21}$ = 2 097 152 & $2^8 - 2$ = 254 \\
+    \hline
+    D & \makecell{224.0.0.0 \\ 239.255.255.255} & Multicast & & \\
+    \hline
+    E & \makecell{240.0.0.0 \\ 254.255.255.255} & Experimental & & \\
+    \hline
+  \end{tabular}
+\end{table}
+
+Class A addresses \textbf{127.0.0.0} to \textbf{127.255.255.255} cannot be used and are reserved for loopback testing.
+
+Fundamental networking formulas are based on the number of bits allocated for network and host parts in the subnet mask.
+
+\begin{itemize}
+  \item \textbf{Number of subnets:} total subnets = $2^n$, where $n$ is the number of bits borrowed from the original host part to create more network bits in subnetting.
+  \item \textbf{Number of usable hosts:} usable hosts = $2^h - 2$, where $h$ is the number of bits used for hosts in the subnet mask. The substraction of 2 accounts for the network and broadcast address, which cannot be assigned to hosts.
+\end{itemize}
+
+\textbf{Key elements}
+
+\begin{itemize}
+  \item \textbf{Total bits for IPv4}, $T = 32$.
+  \item \textbf{Network bits} = $n$.
+  \item \textbf{Number of subnets} = $2^n$.
+  \item \textbf{Host bits}, $h = T - n$.
+  \item \textbf{Usable hosts} = $2^h - 2$.
+\end{itemize}
