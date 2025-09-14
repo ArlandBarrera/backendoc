@@ -1,0 +1,140 @@
+Is a hybrid sorting algorithm derived from merge sort and insertion sort. It was designed to perform well on many kinds of real-world data. Tim Sort is the default sorting algorithm used by Pyhton's \textbf{sorted()} and \textbf{list.sort()} functions.
+
+The main idea behind Tim Sort is to exploit the existing order in the data to minimize the number of comparisons and swaps. It achieves this by dividing the array into small subarrays called runs, which are already sorted, and then merging these runs using a modified merge sort algorihtm.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Define the size og the run. Minimum run size of 32.
+  \item Divide the array into runs. Use the insertion sort to sort to sort the small subsequences (runs) within the array.
+  \item Merge the runs using a modified merge sort algorithm.
+  \item Adjust the run size. After each merge operatio, double the size of the run until it exceeds the length of the array, In small arrays this can be ignored.
+  \item Continue merging until the array is sorted.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+\begin{lstlisting}[style=general]
+int MIN_MERGE = 32;
+
+// minimum range of run
+function minRunLength(n) {
+  int r = 0;
+  while (n >= MIN_MERGE) {
+    r |= (n & 1);
+    n >>= 1;
+  }
+  return n + r;
+}
+
+// insertion sort
+function insertionSort(arr, left, right) {
+  for (int i = left + 1; i <= right; i++) {
+    int tmp = arr[i];
+    int j = i - 1;
+    while (j >= left && arr[j] > tmp) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+    arr[j + 1] = tmp;
+  }
+}
+
+// merge sorted runs
+function merge(arr, low, mid, high) {
+  // original array is broken in two parts left and right
+  int n1 = mid - low + 1;
+  int n2 = high - mid;
+
+  int left = [n1];
+  int right = [n2];
+
+  for (int i = 0; i < n1; i++)
+    left[i] = arr[low + i];
+
+  for (int j = 0; j < n2; j++)
+    right[j] = arr[mid + 1 + j];
+
+  int i = 0;
+  int j = 0;
+  int k = 0;
+
+  while (i < n1 && j < n2) {
+    if (left[i] <= right[j]) {
+      arr[k] = left[i];
+      i++;
+    } else {
+      arr[k] = right[j];
+      j++;
+    }
+  }
+
+  // copy remaining elements of left, if any
+  while (i < n1) {
+    arr[k] = left[i];
+    k++;
+    i++;
+  }
+
+  // copy remaining elements of right, if any
+  while (j < n2) {
+    arr[k] = right[j];
+    k++;
+    j++;
+  }
+}
+
+// Timsort to sort arr[0...n-1]
+function timSort(arr, n) {
+  int minRun = minRunLength(MIN_MERGE);
+
+  // sort individual subarrays of size MIN_MERGE
+  for (int i = 0; i < n; i += minRun)
+    insertionSort(arr, i, min((i + MIN_MERGE - 1), (n - 1)));
+
+  // start merging from size MIN_MERGE
+  for (int size = minRun; size < n; size = 2 * size) {
+    // pick starting point of left sub array
+    for (int left = 0; ; left < n; left += 2 * size) {
+      // find ending point left sub array
+      int mid = left + size - 1;
+      int right = min((left + 2 * size - 1), (n - 1));
+      if (mid < right)
+        merge(arr, left, mid, right);
+    }
+  }
+}
+
+// main
+int arr = [-2, 7, 15, -14, 0, -13, 5, 8, -14, 12];
+int n = arr.length;
+// call function timSort
+timSort(arr, n);
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity}
+
+\begin{itemize}
+  \item \textbf{Best case:} \textit{O(n)}.
+  \item \textbf{Average case:} \emph{O(n log n)}.
+  \item \textbf{Worst case:} \textit{O(n log n)}.
+\end{itemize}
+
+\textbf{Space Complexity:} \textit{O(n)}.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item Well suited for general purpose.
+  \item It is stable.
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item It requires extra space.
+\end{itemize}
