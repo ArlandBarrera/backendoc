@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.31)  13 SEP 2025 19:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.31)  13 SEP 2025 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -359,7 +359,14 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (./nuevos-comandos.tex) (./estilos.tex) (./listings.tex) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (./nuevos-comandos.tex (./hipervinculos.tex
+
+Package xr Warning: 
+No file algorithms,protocols,api/ref-algorithms,protocols,api.aux
+LABELS NOT IMPORTED.
+ on input line 16.
+
+)) (./estilos.tex) (./listings.tex) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count318
 ) (./main.aux)
@@ -520,43 +527,45 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
 
 [10]
 
-[11]) (./algorithms/sort/bubble.tex
+[11]) (./algorithms/minmax.tex
 
-[12]
+[12]) (./algorithms/sort/bubble.tex
 
-[13]) (./algorithms/sort/selection.tex) (./algorithms/sort/insertion.tex
+[13]
 
-[14]) (./algorithms/sort/merge.tex
+[14]) (./algorithms/sort/selection.tex) (./algorithms/sort/insertion.tex
 
-[15]
+[15]) (./algorithms/sort/merge.tex
 
-[16]) (./algorithms/sort/quick.tex
+[16]
 
-[17]
+[17]) (./algorithms/sort/quick.tex
 
-[18]) (./algorithms/sort/heap.tex
+[18]
 
-[19]
+[19]) (./algorithms/sort/heap.tex
 
-[20]) (./algorithms/sort/tim.tex
+[20]
 
-[21]
+[21]) (./algorithms/sort/tim.tex
 
 [22]
 
-[23])) (./protocols/ref-protocols.tex
+[23]
 
-[24]
+[24])) (./protocols/ref-protocols.tex
+
+[25]
 Chapter 2.
 (./protocols/definition.tex) (./protocols/ip.tex) (./protocols/tcp.tex) (./protocols/tls.tex) (./protocols/udp.tex) (./protocols/dns.tex)) (./api/ref-api.tex
 
-[25
+[26
 
 ]
 Chapter 3.
 (./api/definition.tex))
 
-[26
+[27
 
 ] (./main.aux)
  ***********
@@ -564,21 +573,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C6BEA7384F7D9CCB9CFA5A51038BA68F;3257.
+(rerunfilecheck)             Checksum: C40DF1E965DAB256B83222A4A11BE735;3373.
  ) 
 Here is how much of TeX's memory you used:
- 13824 strings out of 469590
- 214805 string characters out of 5470346
- 915468 words of memory out of 5000000
- 39929 multiletter control sequences out of 15000+600000
+ 13884 strings out of 469590
+ 215875 string characters out of 5470346
+ 915967 words of memory out of 5000000
+ 39952 multiletter control sequences out of 15000+600000
  687267 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,10n,82p,1193b,2037s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (26 pages, 308263 bytes).
+Output written on main.pdf (27 pages, 313027 bytes).
 PDF statistics:
- 831 PDF objects out of 1000 (max. 8388607)
- 767 compressed objects within 8 object streams
- 451 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 882 PDF objects out of 1000 (max. 8388607)
+ 816 compressed objects within 9 object streams
+ 479 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 

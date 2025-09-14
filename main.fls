@@ -150,6 +150,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT ./nuevos-comandos.tex
 INPUT ./nuevos-comandos.tex
 INPUT nuevos-comandos.tex
+INPUT ./hipervinculos.tex
+INPUT ./hipervinculos.tex
+INPUT hipervinculos.tex
 INPUT ./estilos.tex
 INPUT ./estilos.tex
 INPUT estilos.tex
@@ -274,6 +277,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT ./algorithms/search/binary.tex
 INPUT ./algorithms/search/binary.tex
 INPUT algorithms/search/binary.tex
+INPUT ./algorithms/minmax.tex
+INPUT ./algorithms/minmax.tex
+INPUT algorithms/minmax.tex
 INPUT ./algorithms/sort/bubble.tex
 INPUT ./algorithms/sort/bubble.tex
 INPUT algorithms/sort/bubble.tex

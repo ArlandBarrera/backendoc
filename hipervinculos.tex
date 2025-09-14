@@ -34,7 +34,25 @@
 
 % Crear hipervinculos
 % Temas
-\expandafter\itlink\expandafter{\temas}
+% \expandafter\itlink\expandafter{\temas}
 
 % Subtemas
-\expandafter\itlink\expandafter{\subtemas}
+% \expandafter\itlink\expandafter{\subtemas}
+
+% Hipervinculos personalizados manuales
+%
+\newcommand{\linearsch}{
+  \unskip\hyperref[lbl-linearsch]{linear search}\ignorespaces
+}
+\newcommand{\mergesrt}{
+  \unskip\hyperref[lbl-mergesrt]{merge sort}\ignorespaces
+}
+\newcommand{\quicksrt}{
+  \unskip\hyperref[lbl-quicksrt]{quick sort}\ignorespaces
+}
+\newcommand{\selectionsrt}{
+  \unskip\hyperref[lbl-selectionsrt]{selection sort}\ignorespaces
+}
+\newcommand{\insertionsrt}{
+  \unskip\hyperref[lbl-insertionsrt]{insertion sort}\ignorespaces
+}
