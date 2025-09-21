@@ -30,6 +30,10 @@ Quick Sort picks an element as a pivot and partitions the given array around the
 \begin{lstlisting}[style=general]
 // partition function (Lomuto)
 function patition(arr, low, high) {
+  // random pivot
+  randpivot = random(low, high)
+  // swap random pivot and last pivot
+  swap(arr, randompivot, high)
   // pivot, always pick last
   int pivot = arr[high];
 

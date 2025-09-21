@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758253292.27706 "main.tex" "main.pdf" "main" 1758253293.87699 0
+["pdflatex"] 1758418301.31252 "main.tex" "main.pdf" "main" 1758418302.32726 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -139,7 +139,7 @@
   "algorithms/sort/heap.tex" 1757812624.51927 2648 3032f3a75d3e8360f0b4027fdc491b45 ""
   "algorithms/sort/insertion.tex" 1757811990.47278 1685 de778866358a5c79dc1295b18f264e2b ""
   "algorithms/sort/merge.tex" 1757780008.07097 2584 af2b480d84da99cb157fec3051cf747d ""
-  "algorithms/sort/quick.tex" 1758245609.16571 4409 4d04a1d800f193c872063325bfb771cc ""
+  "algorithms/sort/quick.tex" 1758320832.25714 4528 b5f88a2e724cfd3508b4bf4e5593657a ""
   "algorithms/sort/selection.tex" 1757811853.91588 1517 ca38c9cec264d4f9ba4e5220f0b7df58 ""
   "algorithms/sort/tim.tex" 1757812249.54026 3624 140571dac4a94f0bc894a4085c972601 ""
   "algorithms/sumseriesarith.tex" 1757775402.05554 1317 ee771d7af4ecb9f1f9d2fc72dcef212d ""
@@ -153,10 +153,10 @@
   "estilos.tex" 1749312547.69376 869 fe4a3ef7a4946ab4558ccb2e3dbc06e5 ""
   "hipervinculos.tex" 1757812176.33521 1448 55d1caaed653b47d87266cd59c1b6c65 ""
   "listings.tex" 1757297907.92383 1079 a8c143dedc6bcea1c9453f92ee09000b ""
-  "main.aux" 1758253293.74242 4743 80324a7833784628626eb38ae572ab53 "pdflatex"
-  "main.out" 1758253293.74306 3614 38bd6db687a6d40179b36f576c33d422 "pdflatex"
+  "main.aux" 1758418302.23254 4743 80324a7833784628626eb38ae572ab53 "pdflatex"
+  "main.out" 1758418302.2333 3614 38bd6db687a6d40179b36f576c33d422 "pdflatex"
   "main.tex" 1757298086.79587 1122 a43c064dde51edbfd1fd55805dd62854 ""
-  "main.toc" 1758253293.74306 2519 68589b95ee1c740e4a278da6cbe38589 "pdflatex"
+  "main.toc" 1758418302.2333 2519 68589b95ee1c740e4a278da6cbe38589 "pdflatex"
   "memory.tex" 1757196394.72477 362 b3e7a75e634071144a727c68f13ab13c ""
   "nuevos-comandos.tex" 1757811518.11953 2702 2df27648a7b838508eb8fbd95cc3aa8a ""
   "paquetes.tex" 1757864434.75435 1863 d0010047d7ed1f540e7f603d11f04cb8 ""
@@ -170,9 +170,9 @@
   "protocols/ip/public.tex" 1758230549.88895 818 136cb96c45828a539fd19baa84ac8e47 ""
   "protocols/ip/static.tex" 1758241854.26983 2672 33456987214a1f6ee53d04164bb9ab71 ""
   "protocols/ref-protocols.tex" 1757854670.98034 616 274fcda02f94f75c163ac20841148b38 ""
-  "protocols/tcp.tex" 1757377192.80853 200 d9ca3f13fdb73b7acc93f5959e1e250f ""
+  "protocols/tcp.tex" 1758405978.79587 965 2189d954d7da3d836d03bc2a45beec9e ""
   "protocols/tls.tex" 1757189760.50433 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "protocols/udp.tex" 1757189760.50433 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "protocols/udp.tex" 1758418301.13331 289 4ceb3d248819944fe15a720e8a625d0d ""
   (generated)
   "main.aux"
   "main.log"
