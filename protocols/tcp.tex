@@ -1,5 +1,11 @@
 The \emph{Transmission Control Protocol} (\textbf{TCP}) is transport protocol, meaning it dictates the way data is sent and received. A TCP header is included in the data of each packet that uses TCP/IP. Before transmitting data, TCP opens a connection with the recipient. TCP ensures that all packets arrive in order once transmission begins. Via TCP, the recipient will acknowledge receiving each packet that arrives. Missing packets will be sent again if receipt is not acknowledge.
 
+High-level protocols that need to transmit data use TCP protocol. Examples include peer-to-peer sharing methods like \textit{File Transfer Protocol} (\textbf{FTP}), \textit{Secure Shell} (\textbf{SSH}) and \textit{Telnet}. It is also used for web access through the \textit{Hypertext Transfer Protocol} (\textbf{HTTP}.)
+
+The two computers begin by establishing a connection vi an automated process called a \textbf{`handshake'}. Only once this handshake has been completed will one computer actually transfer data packets to the other.
+
 It establishes a connection between the sender and receiver before any data is sent, maintaining this connection until communication is complete. It is designed for reliability, not speed. Because TCP has to make sure all packets arrive in order, loading via TCP/IP can take longer if some packets are missing.
 
 TCP and IP were originally designed to be used together, and these are often referred to as the TCP/IP suite. However, other transport protocols can be used with IP.
+
+The two protocols are frequently used together and rely on each other for data to have destination and safely reach it, which is why the process is regularly referred to as TCP/IP.

@@ -1,1 +1,8 @@
-The \textit{User Datagram Protocol} (\textbf{UDP}), is a widely used transport protocol. It is faster than TCP, but it is also less reliable. UDP does not make sure all packets are delivered and in order, and it does not establish a connection before beginning or receiving transmissions.
+The \textit{User Datagram Protocol} (\textbf{UDP}), is a widely used transport protocol. It is faster than TCP, but it is also less reliable. UDP does not make sure all packets are delivered and in order, and it does not establish a connection before beginning or receiving transmissions. It is used for time-sensitive applications like gaming, playing videos or \textit{Domain Name System} (\textbf{DNS}) lookups.
+
+UDP can cause data packets to get lost as they go from the source to the destination. It can also make it relatively easy for a hacker to execute a \textit{distributed denial-of-service} (\textbf{DDoS}) attack.
+
+The process behind UDP is fairly simple. A target computer is identified and the data packets, called \textbf{"datagrams"}, are sent to it. There is nothing to indicate the order in which the packets should arrive. There is also no process for checking if the datagrams reahced the destination.
+
+As a result, the data may get delivered, and it may not. In addition, the order in which it arrives it not controlled, as it is in TCP, so the way the data appears at the final destination maw be glitchy, out of order or have blank spots. However, in a situation where there is no need to check fr errors or correct the data that has been sent, this may not pose a significant problem.
+
