@@ -492,12 +492,12 @@ INPUT protocols/ip/dynamic.tex
 INPUT ./protocols/tcp.tex
 INPUT ./protocols/tcp.tex
 INPUT protocols/tcp.tex
-INPUT ./protocols/tls.tex
-INPUT ./protocols/tls.tex
-INPUT protocols/tls.tex
 INPUT ./protocols/udp.tex
 INPUT ./protocols/udp.tex
 INPUT protocols/udp.tex
+INPUT ./protocols/tls.tex
+INPUT ./protocols/tls.tex
+INPUT protocols/tls.tex
 INPUT ./protocols/dns.tex
 INPUT ./protocols/dns.tex
 INPUT protocols/dns.tex

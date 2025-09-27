@@ -2,7 +2,7 @@ The \emph{Transmission Control Protocol} (\textbf{TCP}) is transport protocol, m
 
 High-level protocols that need to transmit data use TCP protocol. Examples include peer-to-peer sharing methods like \textit{File Transfer Protocol} (\textbf{FTP}), \textit{Secure Shell} (\textbf{SSH}) and \textit{Telnet}. It is also used for web access through the \textit{Hypertext Transfer Protocol} (\textbf{HTTP}.)
 
-The two computers begin by establishing a connection vi an automated process called a \textbf{`handshake'}. Only once this handshake has been completed will one computer actually transfer data packets to the other.
+The two computers begin by establishing a connection vi an automated process called a \textbf{`handshake'}. Only once this handshake has been completed will one computer actually transfer data packets to the other. A three-way handshake is a three-message process that involves a \textbf{SYN} (synchronize) packet from the client to the server, a \textbf{SYN-ACK} (synchronize-acknowledge) response from the server, and finally, an \textbf{ACK} (acknowledge) packet from the client to the server.
 
 It establishes a connection between the sender and receiver before any data is sent, maintaining this connection until communication is complete. It is designed for reliability, not speed. Because TCP has to make sure all packets arrive in order, loading via TCP/IP can take longer if some packets are missing.
 
