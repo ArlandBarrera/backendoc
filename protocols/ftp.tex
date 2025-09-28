@@ -1,0 +1,18 @@
+The \textit{File Transfer Protocol} (\textbf{FTP}) is a standard network protocol used for the transfer of files from one host to another over a TCP-based network, such as the Internet.
+
+It works by opening two connections that link the computers trying to communicate with each other. One connection is designated for the commands and replies that get sent between the two clients, and the other channel handles the transfer of data. An \textbf{FTP server} can act as an online storage where files can be accessed and downloaded by multiple users.
+
+Once the connection is established, the authorized users can perform the following operations:
+
+\begin{itemize}
+  \item Upload files from the user's computer to the FTP server.
+  \item Download files from the FTP server to the user's computer.
+  \item Delete files on the FTP server.
+  \item Change file permissions on the FTP server.
+\end{itemize}
+
+One of the main advantages of FTP is it's ability to perform large file size transfers. When sending a relatively small file, like a Word document, most methods will do, but with FTP, hundreds of gigabytes can be sent at once and still get a smooth transmision.
+
+The \textit{File Transfer Protocol Secure} (\textbf{FTPS}) is and extension of the standard FTP, that upgrades the connection with the implicit use of TLS/SSL. This is a stric form of FTP since the FTPS server will reject the connection it ti doesn't receive the TLS message from the client. Maintains a dual-channel architecture.
+
+The \textit{Secure File Transfer Protocol} (\textbf{SFTP}) is a secure version of FTP. It uses \textbf{SSH} for secure file transfers. It only uses one channel. It is not an FTP protocol, rather, it is an extension of the SSH for transferring, accessing and managing files. It is the preferred method of file distribution amongst server administrators and web developers due to the cryptographic protection it uses as a subest of the SSH protocol.

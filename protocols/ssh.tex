@@ -1,0 +1,29 @@
+The \textit{Secure Shell} (\textbf{SSH}) protocol is a method for secure remote login from one computer to another. It provides several alternative options for strong authentication, and it protects communications security and integrity with strong encryption. It is a secure alternative to the non-protected login protocols (such as \textbf{telnet}, \textbf{rlogin} and \textbf{rsh}) and insecure file transfer methods (such as FTP). SSH runs on top of the TCP/IP protocol suite.
+
+When the SSH protocol became popular, Tatu Ylonen took it to the \textit{Internet Engineering Task Force} (\textbf{IETF}) for standardization. It is now an internet protocol.
+
+The protocol is used in corporate networks for:
+
+\begin{itemize}
+  \item Providing secure access for users and automated processes.
+  \item Interactive and automated file transfers.
+  \item Issuing remote commands.
+  \item Managing network infrastructure and other mission-critical system components.
+\end{itemize}
+
+The protocol works in the client-server model, which means that the connection is established by the SSH client connecting to the SSH server. The steps are the following:
+
+\begin{enumerate}
+  \item Client initiates the connection by contacting server.
+  \item Sends server public key.
+  \item Negotiate parameters and open secure channel.
+  \item User login to server host operating system.
+\end{enumerate}
+
+There are several options that can be used for user authentication. The most common ones are passwords and public key authentication. The public key authentication method is primarily used for automation and sometimes by system administrators for single sign-on.
+
+The idea is to have a cryptographic key pair, public key and private key, and configure the public key on a server to authorize access and grant anyone who has a copy of the private access to the server. The keys used for authentication are called \textbf{SSH keys}.
+
+SSH also allows for \textbf{tunneling}, or \textbf{port forwarding}, which is when data packets are able to cross networks that they would not otherwise be able to cross. Tunneling works by wrapping data packets with additional information, called headers, to change their destination
+
+Linux and Mac operating systems come with SSH built in. Windows machines may need to have SSH client application installed.

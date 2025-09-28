@@ -1,0 +1,36 @@
+The \textit{Hypertext Transfer Protocol} (\textbf{HTTP}) is used for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes, such as machine-to-machine communication and programmataic access to APIs. Everything sent across HTTP is plain text.
+
+Servers store web pages that are provided to the client's computer when a user accesses them. This communication between servers and clients creates a network, known as the World Wide Web, and HTTP is it's foundation.
+
+HTTP follows a classical \textbf{client-server model}, with a client (browser) opening a connection to make a request, then waiting until it receives a response from the server (e.g. computer in the cloud). HTTP is a \textbf{stateless protocol}, meaning that the server does not keep any session data between two requests, although the later addition of \textbf{cookies} adds state to some client-server interactions.
+
+Communication between clients and servers is done by \textbf{requests} and \textbf{responses}:
+
+\begin{enumerate}
+  \item A client (browser) send an \textbf{HTTP request} to the web.
+  \item A web server receives the request.
+  \item The server runs an application to process the request.
+  \item The server returns an \textbf{HTTP response} (output) to the browser.
+  \item The client (browser) receives the response.
+\end{enumerate}
+
+HTTP \textbf{request methods}, sometimes called \textbf{HTTP verbs}, indicate the purpose of the request and what is expected if the request is succesful. The most common methods are \textbf{GET} and \textbf{POST} for retrieving and sending data to servers, respectively, but there are other methods which serve different purposes.
+
+HTTP \textbf{response status codes} indicate whether a specific HTTP request has been succesfully completed. Responses are grouped in five classes:
+
+\begin{enumerate}
+  \item \textbf{Informational:} 100 - 199.
+  \item \textbf{Succesful:} 200 - 299.
+    \begin{itemize}
+      \item \textbf{200 OK:} the request succeded. The result of "success" depends on the HTTP method.
+      \item \textbf{201 Created:} a new resource was created. This is typically the responde sent after \textbf{POST} requests.
+    \end{itemize}
+  \item \textbf{Redirection:} 300 - 399.
+  \item \textbf{Client error:} 400 - 499.
+    \begin{itemize}
+      \item \textbf{404 Not Found:} the server cannot find the requested resource. In the browser, this means the URL is not recognized.
+    \end{itemize}
+  \item \textbf{Server error:} 500 - 599.
+\end{enumerate}
+
+The \textit{Hypertext Transfer Protocol Secure} (\textbf{HTTPS}) is the secure version of HTTP, using TLS on top. Thecnically speaking, HTTPS is not a separate protocol from HTTP. It is simply using TLS/SSL encryption over the HTTP protocol.
