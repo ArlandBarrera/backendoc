@@ -28,9 +28,14 @@ HTTP \textbf{response status codes} indicate whether a specific HTTP request has
   \item \textbf{Redirection:} 300 - 399.
   \item \textbf{Client error:} 400 - 499.
     \begin{itemize}
+      \item \textbf{400 Bad Request:} the server cannot or will not process the request due to something that is perceived to be a client error.
       \item \textbf{404 Not Found:} the server cannot find the requested resource. In the browser, this means the URL is not recognized.
     \end{itemize}
   \item \textbf{Server error:} 500 - 599.
+    \begin{itemize}
+      \item \textbf{500 Internal Server Error:} the server has encountered a situation it does not know how to handle. This error is generic, indicating that the server cannot find a more appropiate \textit{5xx} status code to respond with.
+      \item \textbf{503 Service Unavailable:} the server is not ready to handle request. Common cause are a server that is down for maintenance or that is overload.
+    \end{itemize}
 \end{enumerate}
 
 The \textit{Hypertext Transfer Protocol Secure} (\textbf{HTTPS}) is the secure version of HTTP, using TLS on top. Thecnically speaking, HTTPS is not a separate protocol from HTTP. It is simply using TLS/SSL encryption over the HTTP protocol.
