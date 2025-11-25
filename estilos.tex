@@ -1,9 +1,9 @@
-% ------------------------------
-% Capitulo
-% ------------------------------
 % formato de \titleformat en la documentacion
 % \titleformat{command}[shape]{format}{label}{sep}{before-code}[after-code]
 
+% ------------------------------
+% Capitulo
+% ------------------------------
 \titleformat{\chapter}[display]
   {\bfseries\huge} % Estilo titulo
   {\hfill\Large} % Alinear derecha
@@ -18,6 +18,16 @@
   {\clearpage}
   {}{}
 \makeatother
+
+% ------------------------------
+% Subsubsection
+% ------------------------------
+\titleformat{\subsubsection}[block]
+  {\bfseries\large}
+  {\thesubsubsection}
+  {1em}
+  {}
+  {}
 
 % ------------------------------
 % Profundidad de secciones y toc

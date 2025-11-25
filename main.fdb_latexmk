@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1760754116.21234 "main.tex" "main.pdf" "main" 1760754119.13051 0
+["pdflatex"] 1764089970.38909 "main.tex" "main.pdf" "main" 1764089972.21981 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -256,13 +256,13 @@
   "algorithms/swap/xor.tex" 1757628137.81109 2001 3602038655ec2893c6cec2fc22679312 ""
   "api/definition.tex" 1757626967.90272 231 75a35bd3489dae7ea5815a1caf6d06d9 ""
   "api/ref-api.tex" 1757627015.69871 57 002b50026a9dc60bcb8f1cc22911db60 ""
-  "estilos.tex" 1749312547.69376 869 fe4a3ef7a4946ab4558ccb2e3dbc06e5 ""
+  "estilos.tex" 1764086821.02798 1048 ced75e2fa8421ee1a9783c42ea87b419 ""
   "hipervinculos.tex" 1758510705.54363 1805 569fdcc91a3120ef43eeb792c7021122 ""
   "listings.tex" 1757297907.92383 1079 a8c143dedc6bcea1c9453f92ee09000b ""
-  "main.aux" 1760754118.96157 5462 d851ce76d664c212f60a39e4314c0e48 "pdflatex"
-  "main.out" 1760754118.96286 3960 b8734ad582b5f409441e43353a7e37cd "pdflatex"
+  "main.aux" 1764089972.09722 5594 73b7ad3311d9800b16d593fcf86f4b9c "pdflatex"
+  "main.out" 1764089972.09855 4082 405bf6605c8e46221fee99ca6c997d8b "pdflatex"
   "main.tex" 1757298086.79587 1122 a43c064dde51edbfd1fd55805dd62854 ""
-  "main.toc" 1760754118.96286 2787 ae719256d4945d321c5e3870a5e92be6 "pdflatex"
+  "main.toc" 1764089972.09855 2878 c5952e21610bed3ee4508f7d40ac3e3d "pdflatex"
   "memory.tex" 1757196394.72477 362 b3e7a75e634071144a727c68f13ab13c ""
   "nuevos-comandos.tex" 1757811518.11953 2702 2df27648a7b838508eb8fbd95cc3aa8a ""
   "paquetes.tex" 1758504715.37662 1853 8bffa05083438653eddf81f5e3f61257 ""
@@ -272,7 +272,7 @@
   "protocols/http.tex" 1760754113.10999 3426 8d593833fda8b27c75f169be579c3f88 ""
   "protocols/ip/definition.tex" 1757867367.58587 1622 15e00b2a8d6673bf4d3d6859b5c16d17 ""
   "protocols/ip/dynamic.tex" 1758253291.87204 2046 beb9ffbae9a3096c9f6f9e8bf24b8361 ""
-  "protocols/ip/ipv4.tex" 1757867736.43401 5306 36ab88729b66b29c6fce26449ff741b7 ""
+  "protocols/ip/ipv4.tex" 1764089970.20196 7003 046b68d265ac51c721224cd792031a00 ""
   "protocols/ip/ipv6.tex" 1757989309.3441 1856 9eea645064b899dbb37e48f2e6d989f2 ""
   "protocols/ip/private.tex" 1758230363.57464 1091 190a881983d4e7d164bcb1bcbf5c626d ""
   "protocols/ip/public.tex" 1758230549.88895 818 136cb96c45828a539fd19baa84ac8e47 ""

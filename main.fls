@@ -430,11 +430,11 @@ INPUT algorithms/sumseriesarith.tex
 INPUT ./algorithms/search/definition.tex
 INPUT ./algorithms/search/definition.tex
 INPUT algorithms/search/definition.tex
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT ./algorithms/search/linear.tex
 INPUT ./algorithms/search/linear.tex
 INPUT algorithms/search/linear.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT ./algorithms/search/binary.tex
 INPUT ./algorithms/search/binary.tex
 INPUT algorithms/search/binary.tex

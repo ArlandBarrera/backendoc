@@ -1,8 +1,8 @@
 The Internet Protocol version 4 (IPv4) address is the older version. It is one of the core protocols of the standards-based methods used to interconnect the internet and other networks. It was deployed on the \textit{Atlantic Packet Satellite Network} (SATNET), which was a satellite network, in 1982. It is still used to route most internet traffic despite the existence of IPv6.
 
-IPv4 is currently assigned to all computers. An IPv4 address uses \textbf{32-bit} binary numbers to form a unique IP address. It takes the format of four sets of numbers, each within ranges from \textbf{0} to \textbf{255} and represents and eight-digit binary number, separated by a period point.
+IPv4 is currently assigned to all computers. An IPv4 address uses \textbf{32-bit} binary numbers to form a unique IP address. It takes the format of four sets of numbers, each within ranges from \textbf{0} to \textbf{255} and represents and eight-digit binary number, separated by a period point. Each group of numbers that are separated by periods is called an \textbf{octect}.
 
-The \textbf{full range} of IP addresses can go from \textbf{0.0.0.0} to \textbf{255.255.255.255}. The \textbf{total combination} of IP addresses is $2^{32}$ = \textbf{4 294 967 296} (four billion, two hundred ninety-four million, nine hundred sixty-seven thousand, two hundred ninety-six)
+The \textbf{full range} of IP addresses can go from \textbf{0.0.0.0} to \textbf{255.255.255.255}. The \textbf{total combination} of IP addresses is $2^{32}$ = \textbf{4 294 967 296} (four billion, two hundred ninety-four million, nine hundred sixty-seven thousand, two hundred ninety-six).
 
 Some IP addresses are reserved for networks that carry a specific purpose on the TCP/IP. Four of these IP addresses classes innclude:
 
@@ -13,11 +13,18 @@ Some IP addresses are reserved for networks that carry a specific purpose on the
   \item \textbf{255.255.255.255:} An address dedicated to messages that need to be sent to every computer on a network or \textbf{broadcasted across a network}.
 \end{itemize}
 
+The \textbf{network address} or \textbf{network id} is a number that is assigned to a network. Every network has a unique address. This corresponds to the first address in a range and they end in 0, which can be expressed as \textbf{x.x.x.0}. For example \textbf{192.168.1.0}.
+
+
+The \textbf{broadcast address} or \textbf{broadcast id} is a number that is assigned to broadcast within a network. Every broadcast has a unique address. This corresponds to the last address in a range and they end in the number that corresponds to the last available number in a range. The broadcast id equals the next subnet's network id minus 1. Or once the first broadcast id is known, add the number of possible hosts to get the subsequent broadcast id's for the following subnets.
+
+The \textbf{host address} or \textbf{host id} is what is assigned to hosts within that network such as computers, servers, tablets, routers, phones, etc. Every host has a unique host address. These are assigned after the network address, the look like \textbf{x.x.x.1}, \textbf{x.x.x.2}, \textbf{x.x.x.3}, etc. For example \textbf{192.168.1.1}, \textbf{192.168.1.2}, \textbf{192.168.1.3} and so on.
+
 Further reserved IP addresses are for what is known as \textbf{subnet classes}. A \textbf{subnet} IP is a logically smaller division within a lerger IP network, crated through a process called subnetting. Subnetting divides a large network into smaller, more managable segments, or subnets, wich allows for more efficient data routing, improved network performance and better security.
 
 Each subnet is assigned a unique range of IP addresses, and a \textbf{subnet mask} is used to identify which part of an IP address belongs to the network and which part belongs to the host device within that subnet.
 
-\textbf{Subnetting}
+\subsubsection{Subnetting}
 
 \begin{enumerate}
   \item \textbf{IP Address Structure:} An IP address is logically divided into two parts: a network number (or routing prefix) and a host identifier.
@@ -53,16 +60,17 @@ Class A addresses \textbf{127.0.0.0} to \textbf{127.255.255.255} cannot be used 
 Fundamental networking formulas are based on the number of bits allocated for network and host parts in the subnet mask.
 
 \begin{itemize}
-  \item \textbf{Number of subnets:} total subnets = $2^n$, where $n$ is the number of bits borrowed from the original host part to create more network bits in subnetting.
-  \item \textbf{Number of usable hosts:} usable hosts = $2^h - 2$, where $h$ is the number of bits used for hosts in the subnet mask. The substraction of 2 accounts for the network and broadcast address, which cannot be assigned to hosts.
+  \item \textbf{Number of subnets:} total subnets = $2^m$, where $m$ is the number of bits borrowed from the original host part to create more network bits in subnetting.
+  \item \textbf{Number of possible hosts}: possible addresses in a subnet = $2^n$, where $n$ is the number of ceros in the subnet mask. This is the number of possible hosts. In other words, the number of words allocated for the host portion.
+  \item \textbf{Number of usable hosts:} usable hosts = $2^n - 2$, where $n$ is the number of bits used for hosts in the subnet mask. The substraction of 2 accounts for the first and last address in the range. The first address is reserved for the network id, which identifies the subnet itself. The last address is reserved for the broadcast address, used to send data to all devices in a subnet. These two cannot be assigned to hosts.
 \end{itemize}
 
 \textbf{Key elements}
 
 \begin{itemize}
   \item \textbf{Total bits for IPv4}, $T = 32$.
-  \item \textbf{Network bits} = $n$.
-  \item \textbf{Number of subnets} = $2^n$.
-  \item \textbf{Host bits}, $h = T - n$.
-  \item \textbf{Usable hosts} = $2^h - 2$.
+  \item \textbf{Network bits} = $m$.
+  \item \textbf{Number of subnets} = $2^m$.
+  \item \textbf{Host bits}, $n = T - m$.
+  \item \textbf{Usable hosts} = $2^m - 2$.
 \end{itemize}
