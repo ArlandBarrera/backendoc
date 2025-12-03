@@ -31,32 +31,19 @@ Each subnet is assigned a unique range of IP addresses, and a \textbf{subnet mas
   \item \textbf{Logical Divison:} By changing some of the bits from the host portion to the network portion, an administrator can effectively create smaller subnets from a single, larger network.
 \end{enumerate}
 
-Given the limited number of available IP addresses they are divided into classes. This classes are indicated by the first byte in an octet. It begins in the rightmost bit with \texttt{0} and then following \texttt{1}s are added. For example for class A the first byte is \texttt{00000000}, for class B is \texttt{10000000}. It continues like this until class E which is \texttt{11110000}. The next table indicates the classes, the bits that indicates in the first byte, the network and host part.
+Given the limited number of available IP addresses they are divided into classes. This classes are indicated by the first byte in an octet. It begins in the rightmost bit with \texttt{0} and then following \texttt{1}s are added. For example for class A the first byte is \texttt{00000000}, for class B is \texttt{10000000}. It continues like this until class E which is \texttt{11110000}. The next figure indicates the classes, the bits that indicate the class in the first octet, the network and host part.
 
-\begin{table}[H]
+\begin{figure}[H]
   \centering
-  \begin{tabular}{|c|c|c|c|c|c|}
-    \hline
-    \textbf{\makecell{Address \\ Class}} & \textbf{\makecell{First \\ bits}} & \textbf{Byte 1} & \textbf{Byte 2} & \textbf{Byte 3} & \textbf{Byte 4} \\
-    \hline
-    A & \texttt{0} & Network & \multicolumn{3}{c|}{Host} \\
-    \hline
-    B & \texttt{10} & \multicolumn{2}{c|}{Network} & \multicolumn{2}{c|}{Host} \\
-    \hline
-    C & \texttt{110} & \multicolumn{3}{c|}{Network} & Host \\
-    \hline
-    D & \texttt{1110} & \multicolumn{4}{c|}{Broadcast} \\
-    \hline
-    E & \texttt{1111} & \multicolumn{4}{c|}{Experimental} \\
-    \hline
-  \end{tabular}
+  \includegraphics[scale=0.16]{img/ip_division_classes.png}
   \caption{Division of bits of IP classes}
-\end{table}
+\end{figure}
 
 The range of the classes is determined by the bits in the first byte. The rightmost bits are the ones that indicate the class, the rest are set to \texttt{1}. Below is a table showing the first byte for each class.
 
 \begin{table}[H]
   \centering
+  \caption{Range of IP classes}
   \begin{tabular}{|c|c|c|}
     \hline
     \textbf{\makecell{Address \\ Class}} & \textbf{Binary} & \textbf{Decimal} \\
@@ -72,7 +59,6 @@ The range of the classes is determined by the bits in the first byte. The rightm
     E & \texttt{11111111} & 255 \\
     \hline
   \end{tabular}
-  \caption{Range of IP classes}
 \end{table}
 
 The subnet mask is assigned to the network portion. For example, for class B the subnet mask is \texttt{255.255.0.0} in binary is \texttt{11111111.11111111.00000000.00000000}, `\texttt{1}' refers to the network part and `\texttt{0}' to the host part.
@@ -81,6 +67,7 @@ The router on a TCP/IP network can be configured to ensure it recognizes subnets
 
 \begin{table}[H]
   \centering
+  \caption{Subnets of IP classes}
   \begin{tabular}{|c|c|c|c|c|}
     \hline
     \textbf{\makecell{Address \\ Class}} & \textbf{Range} & \textbf{\makecell{Default \\ Subnet Mask}} & \textbf{\makecell{Number of \\ Networks}}  & \textbf{\makecell{Hosts per \\ Network}} \\
@@ -91,12 +78,11 @@ The router on a TCP/IP network can be configured to ensure it recognizes subnets
     \hline
     C & \texttt{\makecell{192.0.0.0 \\ 223.255.255.255}} & \texttt{255.255.255.0} & \makecell{$2^{21}$ \\ 2 097 152} & \makecell{$2^8 - 2$ \\ 254} \\
     \hline
-    D & \texttt{\makecell{224.0.0.0 \\ 239.255.255.255}} & Broadcast & N/A & N/A \\
+    D & \texttt{\makecell{224.0.0.0 \\ 239.255.255.255}} & Multicast & N/A & N/A \\
     \hline
     E & \texttt{\makecell{240.0.0.0 \\ 255.255.255.255}} & Experimental & N/A & N/A \\
     \hline
   \end{tabular}
-  \caption{Subnets of IP classes}
 \end{table}
 
 Class A addresses \texttt{127.0.0.0} to \texttt{127.255.255.255} cannot be used and are reserved for loopback testing.
@@ -116,5 +102,5 @@ Fundamental networking formulas are based on the number of bits allocated for ne
   \item \textbf{Network bits} = $m$.
   \item \textbf{Number of subnets} = $2^m$.
   \item \textbf{Host bits}, $n = T - m$.
-  \item \textbf{Usable hosts} = $2^m - 2$.
+  \item \textbf{Usable hosts} = $2^n - 2$.
 \end{itemize}

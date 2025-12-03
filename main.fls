@@ -474,6 +474,11 @@ INPUT protocols/ip/definition.tex
 INPUT ./protocols/ip/ipv4.tex
 INPUT ./protocols/ip/ipv4.tex
 INPUT protocols/ip/ipv4.tex
+INPUT ./img/ip_division_classes.png
+INPUT ./img/ip_division_classes.png
+INPUT ./img/ip_division_classes.png
+INPUT ./img/ip_division_classes.png
+INPUT ./img/ip_division_classes.png
 INPUT ./protocols/ip/ipv6.tex
 INPUT ./protocols/ip/ipv6.tex
 INPUT protocols/ip/ipv6.tex
