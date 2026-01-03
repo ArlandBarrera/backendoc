@@ -388,6 +388,7 @@ OUTPUT main.toc
 INPUT ./algorithms/ref-algorithms.tex
 INPUT ./algorithms/ref-algorithms.tex
 INPUT algorithms/ref-algorithms.tex
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmro12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT ./algorithms/bigo.tex
 INPUT ./algorithms/bigo.tex
@@ -411,7 +412,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmro12.tfm
 INPUT ./algorithms/swap/arithmetic.tex
 INPUT ./algorithms/swap/arithmetic.tex
 INPUT algorithms/swap/arithmetic.tex
@@ -462,6 +462,12 @@ INPUT algorithms/sort/heap.tex
 INPUT ./algorithms/sort/tim.tex
 INPUT ./algorithms/sort/tim.tex
 INPUT algorithms/sort/tim.tex
+INPUT ./algorithms/graph/dfs.tex
+INPUT ./algorithms/graph/dfs.tex
+INPUT algorithms/graph/dfs.tex
+INPUT ./algorithms/graph/bfs.tex
+INPUT ./algorithms/graph/bfs.tex
+INPUT algorithms/graph/bfs.tex
 INPUT ./protocols/ref-protocols.tex
 INPUT ./protocols/ref-protocols.tex
 INPUT protocols/ref-protocols.tex

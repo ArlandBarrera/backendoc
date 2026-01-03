@@ -1,0 +1,75 @@
+Depth First Search (DFS) is a graph traversal method that starts from a spurce vertex and explores each path completely before backtracking and exploring other paths. To avoid revisiting nodes in graphs in cycles, a visited array is used to track visited vertices.
+
+\subsubsection*{Steps}
+
+\begin{itemize}
+  \item Start from a given source vertex and explore one path as deeply as possible.
+  \item When it reaches a vertex with no unvisited neighbors, it backtracks to the previous vertex to explore other unvisited paths.
+  \item This continues until all vertices reachable from the start are visited.
+\end{itemize}
+
+\subsubsection*{Implementation}
+
+This implementation is for a connected and undirected graph. All vertices are reachable in the graph and the direction of the edges go both ways.
+
+\begin{lstlisting}[style=general]
+function dfsRec(adj, visited, s, res) {
+  visited[s] = true;
+  res.push(s);
+
+  // recursively visit all adjacent vertices
+  for (int i of adj[s]) {
+    if (!visited[i]) {
+      dfsRec(adj, visited, i, res);
+    }
+  }
+}
+
+function dfs(adj) {
+  int visited = new Array(adj.length).fill(false);
+  int res = [];
+  dfsRec(adj, visited, 0, res);
+  return res;
+}
+
+function addEdge(adj, u, v) {
+  adj[u].push(v);
+  adj[v].push(u);
+}
+
+int vertices = [[1,2], [1,0], [2,0]];
+int V = nodes.length;
+int adj = [];
+
+for (int i = 0; i < V; i++) {
+  adj.push([]);
+}
+
+for (int i = 0; i < vertices.length; i++) {
+  addEdge(adj, vertices[i][0], vertices[i][1]);
+}
+
+int res = dfs(adj);
+\end{lstlisting}
+
+\subsubsection*{Time and Space Complexity}
+
+\textbf{Time Complexity}
+
+\textbf{Time Complexity:} \textit{O(V + E)}, where V is the number of vertives and E is the number of edges in the graph.
+
+\textbf{Space Complexity:} \textit{O(V + E)}, since an extra visited array of size V is required, and stack size for recursive calls.
+
+\subsubsection*{Advantages and Disadvantages}
+
+\textbf{Advantages:}
+
+\begin{itemize}
+  \item x
+\end{itemize}
+
+\textbf{Disadvantages:}
+
+\begin{itemize}
+  \item x
+\end{itemize}
