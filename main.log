@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.31)  3 JAN 2026 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.31)  3 JAN 2026 21:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -807,18 +807,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [27]
 
-[28]) (./algorithms/graph/bfs.tex)) (./protocols/ref-protocols.tex
+[28]) (./algorithms/graph/bfs.tex
 
-[29]
+[29])) (./protocols/ref-protocols.tex
+
+[30]
 Chapter 2.
 (./protocols/definition.tex) (./protocols/ip/definition.tex) (./protocols/ip/ipv4.tex
 
-[30
+[31
 
 ]
 
-[31]
-<img/ip_division_classes.png, id=855, 2941.99126pt x 1541.76pt>
+[32]
+<img/ip_division_classes.png, id=899, 2941.99126pt x 1541.76pt>
 File: img/ip_division_classes.png Graphic file (type png)
 <use img/ip_division_classes.png>
 Package pdftex.def Info: img/ip_division_classes.png  used on input line 38.
@@ -830,32 +832,32 @@ Overfull \hbox (0.9732pt too wide) in paragraph at lines 38--39
 
 
 
-[32 <./img/ip_division_classes.png>]) (./protocols/ip/ipv6.tex
+[33 <./img/ip_division_classes.png>]) (./protocols/ip/ipv6.tex
 
-[33]) (./protocols/ip/public.tex) (./protocols/ip/private.tex
+[34]) (./protocols/ip/public.tex) (./protocols/ip/private.tex
 
-[34]) (./protocols/ip/static.tex) (./protocols/ip/dynamic.tex
+[35]) (./protocols/ip/static.tex) (./protocols/ip/dynamic.tex
 
-[35]) (./protocols/dns.tex) (./protocols/tcp.tex
+[36]) (./protocols/dns.tex) (./protocols/tcp.tex
 Underfull \vbox (badness 1019) has occurred while \output is active []
 
 
 
-[36]) (./protocols/udp.tex) (./protocols/tls.tex
+[37]) (./protocols/udp.tex) (./protocols/tls.tex
 
-[37]) (./protocols/http.tex
+[38]) (./protocols/http.tex
 
-[38]) (./protocols/ftp.tex
+[39]) (./protocols/ftp.tex
 
-[39]) (./protocols/ssh.tex
+[40]) (./protocols/ssh.tex
 
-[40])) (./api/ref-api.tex
+[41])) (./api/ref-api.tex
 
-[41]
+[42]
 Chapter 3.
 (./api/definition.tex))
 
-[42
+[43
 
 ] (./main.aux)
  ***********
@@ -866,18 +868,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6E08523704E0C5AC821CA11B4B87FA91;4482.
  ) 
 Here is how much of TeX's memory you used:
- 34749 strings out of 469590
- 794394 string characters out of 5470346
+ 34790 strings out of 469590
+ 795035 string characters out of 5470346
  1737075 words of memory out of 5000000
  60338 multiletter control sequences out of 15000+600000
  687267 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,17n,108p,1193b,2173s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (42 pages, 450720 bytes).
+Output written on main.pdf (43 pages, 455572 bytes).
 PDF statistics:
- 1109 PDF objects out of 1200 (max. 8388607)
- 1024 compressed objects within 11 object streams
- 575 named destinations out of 1000 (max. 500000)
+ 1163 PDF objects out of 1200 (max. 8388607)
+ 1077 compressed objects within 11 object streams
+ 616 named destinations out of 1000 (max. 500000)
  346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

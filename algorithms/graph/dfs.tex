@@ -1,11 +1,11 @@
-Depth First Search (DFS) is a graph traversal method that starts from a spurce vertex and explores each path completely before backtracking and exploring other paths. To avoid revisiting nodes in graphs in cycles, a visited array is used to track visited vertices.
+Depth First Search (DFS) is a graph traversal method that starts from a spurce vertex and explores each path completely before backtracking and exploring other paths. To avoid revisiting nodes in graphs in cycles, a visited array is used to track visited vertices. The data structure that keeps track of the visited vertices is a stack.
 
 \subsubsection*{Steps}
 
 \begin{itemize}
   \item Start from a given source vertex and explore one path as deeply as possible.
   \item When it reaches a vertex with no unvisited neighbors, it backtracks to the previous vertex to explore other unvisited paths.
-  \item This continues until all vertices reachable from the start are visited.
+  \item This continues until all reachable vertices from the start are visited.
 \end{itemize}
 
 \subsubsection*{Implementation}
@@ -13,12 +13,12 @@ Depth First Search (DFS) is a graph traversal method that starts from a spurce v
 This implementation is for a connected and undirected graph. All vertices are reachable in the graph and the direction of the edges go both ways.
 
 \begin{lstlisting}[style=general]
-function dfsRec(adj, visited, s, res) {
-  visited[s] = true;
-  res.push(s);
+function dfsRec(adj, visited, src, res) {
+  visited[src] = true;
+  res.push(src);
 
   // recursively visit all adjacent vertices
-  for (int i of adj[s]) {
+  for (int i of adj[src]) {
     if (!visited[i]) {
       dfsRec(adj, visited, i, res);
     }

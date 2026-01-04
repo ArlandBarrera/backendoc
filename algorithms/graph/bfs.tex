@@ -1,30 +1,68 @@
-defnition
+Breadth First Search (BFS) is a graph traversal algorithm that starts from a source node and explores the graph level by level. First, it visits all nodes directly adjacent to the source. Then, it moves on to visit the adjacent nodes of those nodes, and this process continues until all reachable nodes are visited. The data structure that keeps track of the visited vertices is a queue.
 
 \subsubsection*{Steps}
 
 \begin{itemize}
-  \item x
+  \item Start from a given source vertex and explore level by level.
+  \item It moves on to visit the adjacent nodes of those nodes.
+  \item This continues until all reachable vertices from the start are visited.
 \end{itemize}
 
 \subsubsection*{Implementation}
 
+This implementation is for a connected and undirected graph. All vertices are reachable in the graph and the direction of the edges go both ways.
+
 \begin{lstlisting}[style=general]
-function algorithm(x) {
-  x = y;
+function bfs(adj) {
+  int visited = new Array(adj.length).fill(false);
+  int res = [];
+
+  // deque = double ended queue
+  int q = new Deque();
+
+  let src = 0;
+  viisted[src] = true;
+  q.push(scr); // add at rear
+
+  while (!q.isEmpty()) {
+    int curr = q.shift(); // remove at front
+    res.push(curr);
+
+    for (int i of adj[curr]) {
+      if (!visited[i]) {
+        visited[i] = true;
+        q.push(i);
+      }
+    }
+  }
+  return res;
 }
+
+fuction addEdge(adj, u, v) {
+  adj[u].push(v);
+  adj[v].push(u);
+}
+
+int vertices = [[1,2], [1,0], [2,0]];
+int V = nodes.length;
+int adj = [];
+
+for (int i = 0; i < V; i++) {
+  adj.push([]);
+}
+
+for (int i = 0; i < vertices.length; i++) {
+  addEdge(adj, vertices[i][0], vertices[i][1]);
+}
+
+int res = bfs(adj);
 \end{lstlisting}
 
 \subsubsection*{Time and Space Complexity}
 
-\textbf{Time Complexity}
+\textbf{Time Complexity:} \textit{O(V + E)}, the for loop ensures BFS starts from every unvisited vertex to cover all components, but the visited array ensures each vertex and edge is processed only pnce, keeping the total time complexity to be linear.
 
-\begin{itemize}
-  \item \textbf{Best case:} \textit{O(1)}.
-  \item \textbf{Average case:} \emph{O(n)}.
-  \item \textbf{Worst case:} \textit{O(1)}.
-\end{itemize}
-
-\textbf{Space Complexity:} \textit{O(1)}.
+V\textbf{Space Complexity:} \textit{O(V)}, using a queue to keep track of the vertices that need to be visited.
 
 \subsubsection*{Advantages and Disadvantages}
 

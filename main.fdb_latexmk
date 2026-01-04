@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1767475934.76598 "main.tex" "main.pdf" "main" 1767475937.64608 0
+["pdflatex"] 1767492535.30913 "main.tex" "main.pdf" "main" 1767492538.68396 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -236,8 +236,8 @@
   "/usr/local/texlive/2025/texmf.cnf" 1748745465.77971 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "algorithms,protocols,api/ref-algorithms,protocols,api.aux" 0 -1 0 ""
   "algorithms/bigo.tex" 1758677426.76115 3170 9b44aa3e5b9e3d3dc7ea5f75fb9584d0 ""
-  "algorithms/graph/bfs.tex" 1767454046.21752 646 a9e2cd2b0b863735cfb9205258b0d379 ""
-  "algorithms/graph/dfs.tex" 1767475932.99847 2018 52109e6befaac263aba91056b9e07cd7 ""
+  "algorithms/graph/bfs.tex" 1767492534.9038 2223 027039aa38a7b19439307c312f39f11b ""
+  "algorithms/graph/dfs.tex" 1767492523.04378 2098 8d697dacaacd54dc2445f9ca9586fb83 ""
   "algorithms/minmax.tex" 1757811552.63121 1141 2b5f56466271d7893b412db5b66e24c5 ""
   "algorithms/ref-algorithms.tex" 1767453353.16647 1695 e321572cc91a7c88125f7690da56ba06 ""
   "algorithms/search/binary.tex" 1757780574.05855 3240 b8a661982c94b5d152e9ec99a2deb19b ""
@@ -262,10 +262,10 @@
   "hipervinculos.tex" 1758510705.54363 1805 569fdcc91a3120ef43eeb792c7021122 ""
   "img/ip_division_classes.png" 1764724294.71329 85026 577179542b00cd644edc0b33264f727b ""
   "listings.tex" 1757297907.92383 1079 a8c143dedc6bcea1c9453f92ee09000b ""
-  "main.aux" 1767475937.48698 6380 a8ce689b7c93482afeba9bc38347a827 "pdflatex"
-  "main.out" 1767475937.48817 4482 6e08523704e0c5ac821ca11b4b87fa91 "pdflatex"
+  "main.aux" 1767492538.48545 6380 8209bdc6f3575e82cf6aa6e6010dfa1d "pdflatex"
+  "main.out" 1767492538.48688 4482 6e08523704e0c5ac821ca11b4b87fa91 "pdflatex"
   "main.tex" 1757298086.79587 1122 a43c064dde51edbfd1fd55805dd62854 ""
-  "main.toc" 1767475937.48817 3126 9fd0a8f9c540ea3e55ac051df8d6f953 "pdflatex"
+  "main.toc" 1767492538.48688 3126 8f5d90747ba8743d6158cdd975a7a52d "pdflatex"
   "memory.tex" 1757196394.72477 362 b3e7a75e634071144a727c68f13ab13c ""
   "nuevos-comandos.tex" 1757811518.11953 2702 2df27648a7b838508eb8fbd95cc3aa8a ""
   "paquetes.tex" 1758504715.37662 1853 8bffa05083438653eddf81f5e3f61257 ""
